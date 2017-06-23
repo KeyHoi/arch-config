@@ -1,0 +1,117 @@
+{
+   "checksum": "6754d30878a82fb9b8529a0a9b2d309c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13127139114035297",
+            "id": "6",
+            "name": "Netflix",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.netflix.com/browse"
+         }, {
+            "date_added": "13127254171362683",
+            "id": "7",
+            "name": "converter",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://www.online-convert.com/"
+         }, {
+            "date_added": "13134053554017676",
+            "id": "8",
+            "name": "SET-Tutoren ",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://mpi.fs.tum.de/fuer-studierende/set-tutoren/"
+         }, {
+            "date_added": "13135022333242897",
+            "id": "9",
+            "name": "Amsterdam_1",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.airbnb.de/rooms/8058674?checkin=2017-09-08&checkout=2017-09-11&guests=4&adults=4"
+         }, {
+            "date_added": "13135022342953595",
+            "id": "10",
+            "name": "Amsterdam_2",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.airbnb.de/rooms/13220878?checkin=2017-09-08&checkout=2017-09-11&guests=4&adults=4&s=cDbnMLRZ"
+         }, {
+            "date_added": "13135255412726758",
+            "id": "11",
+            "name": "YT",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13135255445693663",
+            "id": "12",
+            "name": "OP",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://onepiece-tube.com/"
+         }, {
+            "date_added": "13135264941300773",
+            "id": "13",
+            "name": "BS",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://bs.to/andere-serien"
+         }, {
+            "children": [ {
+               "children": [  ],
+               "date_added": "13141692573736128",
+               "date_modified": "13141692573736128",
+               "id": "15",
+               "name": "Neuer Ordner",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "date_added": "13128264097880531",
+               "id": "16",
+               "name": "creative adult",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.redbubble.com/de/people/badbugs/works/13357633-graffiti-tag-typography-the-creative-adult-is-the-child-who-has-survived?p=poster&finish=semi_gloss&size=small"
+            }, {
+               "date_added": "13135267766841039",
+               "id": "17",
+               "name": "shaco",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.redbubble.com/de/people/pablosiberia/works/24801216-shaco?grid_pos=1&p=poster"
+            } ],
+            "date_added": "13141692573735319",
+            "date_modified": "13141692573735319",
+            "id": "14",
+            "name": "Poster",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         } ],
+         "date_added": "13141692286818046",
+         "date_modified": "13135264941300773",
+         "id": "1",
+         "name": "Lesezeichenleiste",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13141692286818050",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Weitere Lesezeichen",
+         "type": "folder"
+      },
+      "sync_transaction_version": "1",
+      "synced": {
+         "children": [  ],
+         "date_added": "13141692286818051",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Lesezeichen",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

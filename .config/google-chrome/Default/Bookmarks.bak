@@ -1,0 +1,279 @@
+{
+   "checksum": "e814cd369001cb9dc2e84feffce69410",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13127139114035297",
+               "id": "6",
+               "meta_info": {
+                  "last_visited_desktop": "13142130857869088"
+               },
+               "name": "Netflix",
+               "sync_transaction_version": "248",
+               "type": "url",
+               "url": "https://www.netflix.com/browse"
+            }, {
+               "date_added": "13135255412726758",
+               "id": "11",
+               "meta_info": {
+                  "last_visited_desktop": "13142701223948555"
+               },
+               "name": "YouTube",
+               "sync_transaction_version": "366",
+               "type": "url",
+               "url": "https://www.youtube.com/"
+            }, {
+               "date_added": "13135264941300773",
+               "id": "13",
+               "meta_info": {
+                  "last_visited_desktop": "13142130198267647"
+               },
+               "name": "BurningSeries",
+               "sync_transaction_version": "244",
+               "type": "url",
+               "url": "https://bs.to/andere-serien"
+            } ],
+            "date_added": "13141732311789087",
+            "date_modified": "13141732321764937",
+            "id": "20",
+            "name": "Video",
+            "sync_transaction_version": "34",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13141732387522935",
+               "id": "22",
+               "meta_info": {
+                  "last_visited": "13141902478806888",
+                  "last_visited_desktop": "13142506643678981"
+               },
+               "name": "DWT",
+               "sync_transaction_version": "348",
+               "type": "url",
+               "url": "http://www14.in.tum.de/lehre/2017SS/dwt/index.html.de"
+            }, {
+               "date_added": "13141732395707768",
+               "id": "23",
+               "meta_info": {
+                  "last_visited": "13142512682029448",
+                  "last_visited_desktop": "13141754160183663"
+               },
+               "name": "Theo",
+               "sync_transaction_version": "350",
+               "type": "url",
+               "url": "https://www7.in.tum.de/um/courses/theo/ss2017/"
+            }, {
+               "date_added": "13141732434667928",
+               "id": "24",
+               "meta_info": {
+                  "last_visited": "13141917478895227",
+                  "last_visited_desktop": "13142697790916929"
+               },
+               "name": "GRNVS",
+               "sync_transaction_version": "362",
+               "type": "url",
+               "url": "https://grnvs.net.in.tum.de/"
+            }, {
+               "date_added": "13141732458572208",
+               "id": "25",
+               "meta_info": {
+                  "last_visited_desktop": "13142196570759022"
+               },
+               "name": "Proseminar",
+               "sync_transaction_version": "275",
+               "type": "url",
+               "url": "http://campar.in.tum.de/Chair/TeachingSs17ArProseminar"
+            }, {
+               "date_added": "13141732229815203",
+               "id": "18",
+               "meta_info": {
+                  "last_visited": "13142617449640558",
+                  "last_visited_desktop": "13142714515685706"
+               },
+               "name": "WolframAlpha",
+               "sync_transaction_version": "367",
+               "type": "url",
+               "url": "https://www.wolframalpha.com/"
+            }, {
+               "date_added": "13141732274571316",
+               "id": "19",
+               "meta_info": {
+                  "last_visited_desktop": "13142011047702972"
+               },
+               "name": "MatheZeichen",
+               "sync_transaction_version": "212",
+               "type": "url",
+               "url": "https://www.matheretter.de/mathe-zeichen"
+            }, {
+               "date_added": "13141732585701596",
+               "id": "27",
+               "meta_info": {
+                  "last_visited": "13141917485916829",
+                  "last_visited_desktop": "13142003887600446"
+               },
+               "name": "TUM-Moodle",
+               "sync_transaction_version": "204",
+               "type": "url",
+               "url": "https://www.moodle.tum.de/"
+            }, {
+               "date_added": "13141732596424244",
+               "id": "28",
+               "meta_info": {
+                  "last_visited": "13142617133466727",
+                  "last_visited_desktop": "13142697847743919"
+               },
+               "name": "TUMonline",
+               "sync_transaction_version": "363",
+               "type": "url",
+               "url": "https://campus.tum.de/tumonline/webnav.ini?pUrl=wbanmeldung.durchfuehren%3Fctxid%3Dcheck%26cusergroup%3D%26cinframe%3D%26pLogonMask%3D%26curl%3D"
+            }, {
+               "children": [ {
+                  "date_added": "13141942711704600",
+                  "id": "31",
+                  "meta_info": {
+                     "last_visited_desktop": "13141942711705570"
+                  },
+                  "name": "Structure, Analysis and Design of Computer Game",
+                  "sync_transaction_version": "143",
+                  "type": "url",
+                  "url": "https://books.google.de/books?hl=de&lr=&id=NcnkiykF__8C&oi=fnd&pg=PA228&dq=augmented+reality+games&ots=ge-Gt0rY27&sig=euesJTKy-ZG5muYY9yBxn7iEc2w#v=onepage&q&f=false"
+               }, {
+                  "date_added": "13141943234473254",
+                  "id": "33",
+                  "meta_info": {
+                     "last_visited_desktop": "13141943234474279"
+                  },
+                  "name": "Handbook of Augmented Reality - Google Books",
+                  "sync_transaction_version": "148",
+                  "type": "url",
+                  "url": "https://books.google.de/books?hl=de&lr=&id=fG8JUdrScsYC&oi=fnd&pg=PR3&dq=augmented+reality+in+games&ots=idGdPwQd1z&sig=nPlWcZ0NQNVzH3a1rIkxCJnm1Ro#v=onepage&q&f=false"
+               }, {
+                  "date_added": "13141943435971382",
+                  "id": "34",
+                  "meta_info": {
+                     "last_visited_desktop": "13141943435972323"
+                  },
+                  "name": "GameSetWatch Augmented Reality Used To Enhance Both Pool And Air Hockey",
+                  "sync_transaction_version": "152",
+                  "type": "url",
+                  "url": "http://www.gamesetwatch.com/2011/10/augmented_reality_used_to_enhance_both_pool_and_air_hockey.php"
+               }, {
+                  "date_added": "13141943938763936",
+                  "id": "35",
+                  "meta_info": {
+                     "last_visited_desktop": "13142471941952679"
+                  },
+                  "name": "(3) Holy Crap, This New Hololens Demo Is Freaking Crazy - YouTube",
+                  "sync_transaction_version": "346",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=29xnzxgCx6I"
+               }, {
+                  "date_added": "13141944202477095",
+                  "id": "36",
+                  "meta_info": {
+                     "last_visited_desktop": "13141944202477941"
+                  },
+                  "name": "(3) Alex Kipman - The Dawn of the Age of Holograms - TED - YouTube",
+                  "sync_transaction_version": "163",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=jGOE8q1mH3M"
+               } ],
+               "date_added": "13141942732503949",
+               "date_modified": "13141944202477095",
+               "id": "32",
+               "name": "Proseminar",
+               "sync_transaction_version": "144",
+               "type": "folder"
+            } ],
+            "date_added": "13141732331952522",
+            "date_modified": "13142701088982909",
+            "id": "21",
+            "name": "Uni",
+            "sync_transaction_version": "57",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13141732136112281",
+               "id": "16",
+               "meta_info": {
+                  "last_visited_desktop": "13142715581298058"
+               },
+               "name": "Facebook",
+               "sync_transaction_version": "369",
+               "type": "url",
+               "url": "https://www.facebook.com/"
+            }, {
+               "date_added": "13141732187203672",
+               "id": "17",
+               "meta_info": {
+                  "last_visited_desktop": "13142701141277090"
+               },
+               "name": "Instagram",
+               "sync_transaction_version": "361",
+               "type": "url",
+               "url": "https://www.instagram.com/"
+            } ],
+            "date_added": "13141732493468895",
+            "date_modified": "13141732500417003",
+            "id": "26",
+            "name": "Social Media",
+            "sync_transaction_version": "62",
+            "type": "folder"
+         }, {
+            "date_added": "13127254171362683",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13142200773660361"
+            },
+            "name": "converter",
+            "sync_transaction_version": "281",
+            "type": "url",
+            "url": "http://www.online-convert.com/"
+         }, {
+            "date_added": "13135255445693663",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13141695547436796"
+            },
+            "name": "OnePiece",
+            "sync_transaction_version": "27",
+            "type": "url",
+            "url": "http://onepiece-tube.com/"
+         }, {
+            "date_added": "13134053554017676",
+            "id": "8",
+            "meta_info": {
+               "last_visited_desktop": "13141940961955577"
+            },
+            "name": "SET-Tutoren ",
+            "sync_transaction_version": "134",
+            "type": "url",
+            "url": "https://mpi.fs.tum.de/fuer-studierende/set-tutoren/"
+         } ],
+         "date_added": "13141694383965187",
+         "date_modified": "13141732585701596",
+         "id": "1",
+         "name": "Lesezeichenleiste",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13141694383965192",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Weitere Lesezeichen",
+         "type": "folder"
+      },
+      "sync_transaction_version": "369",
+      "synced": {
+         "children": [  ],
+         "date_added": "13141694383965192",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Lesezeichen",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
