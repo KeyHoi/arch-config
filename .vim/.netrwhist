@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/keyhoi/.config'
+let g:netrw_dirhist_2='/home/keyhoi/Uni/SS17/GRNVS/Assignments/03677833'
+let g:netrw_dirhist_3='/home/keyhoi/Arch-Linux-Setup/.git'
+let g:netrw_dirhist_4='/home/keyhoi/.calcurse'
+let g:netrw_dirhist_5='/home/keyhoi/.config/htop'
+let g:netrw_dirhist_6='/home/keyhoi/.cat_installer'

@@ -1,0 +1,31 @@
+alsi
+pulseaudio
+rxvt-unicode
+geany
+evince
+pavucontrol
+arandr
+android-file-transfer
+vifm
+conky
+feh
+tex-live-most
+compton
+rofi
+scrot
+galculator
+lxappearance
+
+transs
+acip/acpid
+mpstat
+transset-df
+
+Font-Awesome
+
+yaourt:
+	> franz(replace with mutt)
+	> google-chrome-stable(Stylisch! Tab Redirect!)
+	> alsi
+	> i3-gaps
+
