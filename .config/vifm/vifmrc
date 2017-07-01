@@ -29,8 +29,8 @@ filextype *.jpg,*.png
           \ {Open in feh}
           \ feh %c %i &
 filextype *.txt
-          \ {Open in geany}
-          \ geany %c %i &
+          \ {Open in sublime_text}
+          \ subl %c %i &
 filextype *.m4a,*.mp3
           \ {Open in rhythmbox}
           \ rhythmbox %c %i &
