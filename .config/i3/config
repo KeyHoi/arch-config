@@ -76,11 +76,11 @@ set $workspace2 "2: "
 set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
-set $workspace6 "6: "
-set $workspace7 "7: "
-set $workspace8 "8: "
-set $workspace9 "9: "
-set $workspace10 "10: "
+set $workspace6 "6: "
+set $workspace7 "7: "
+set $workspace8 "8: "
+set $workspace9 "9: "
+set $workspace10 "10: "
 
 #toggle transparency of focused window
 bindsym $mod+q exec flash_win.sh
@@ -114,7 +114,8 @@ assign [class="Conky"] $workspace1
 assign [class="sublime_text"] $workspace3
 assign [class="Evince"] $workspace4
 assign [class="feh"] $workspace4
-assign [class="Franz"] $workspace6
+assign [class="whats-app-nativefier-7bbd2c"] $workspace8
+assign [class="Thunderbird"] $workspace9
 
 for_window [class=*]move position center
 
@@ -137,8 +138,9 @@ bindsym $mod+Shift+A exec android-file-transfer
 bindsym $mod+p exec pavucontrol
 bindsym $mod+a exec arandr
 bindsym $mod+l exec lxappearance
+bindsym $mod+m exec thunderbird
 bindsym $mod+Shift+T exec subl
-bindsym $mod+Shift+f exec franz-bin
+bindsym $mod+Shift+W exec whatsapp-web-desktop
 bindsym $mod+Shift+c exec galculator
 
 bindsym $mod+Shift+S exec scrot '%d-%m-%Y_$p$s_scrot.png' -e 'mv $f ~/Images/Screenshots/'
@@ -151,7 +153,7 @@ bindsym $mod+Shift+l exec i3lock -i ~/Images/why_so_serious.png
 bindsym $mod+Shift+r restart
 
 #gaps
-gaps inner 10
+gaps inner 0
 
 bindsym $mod+g gaps inner all set 10
 bindsym $mod+Shift+g gaps inner all set 0
@@ -167,10 +169,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will grow the window’s height.
         # Pressing down will shrink the window’s height.
-        bindsym Left resize shrink width 3 px or 3 ppt
-        bindsym Down resize grow height 3 px or 3 ppt
-        bindsym Up resize shrink height 3 px or 3 ppt
-        bindsym Right resize grow width 3 px or 3 ppt
+        bindsym Left resize shrink width 1 px or 1 ppt
+        bindsym Down resize grow height 1 px or 1 ppt
+        bindsym Up resize shrink height 1 px or 1 ppt
+        bindsym Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -194,19 +196,19 @@ focus_follows_mouse no
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-	position top
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	i3bar_command i3bar -t
-    colors {
-		background #050505100
-		separator #FFFFFF
-		#                   border  background	text
-		focused_workspace	#00EE00	#00000070 	#00EE00
-		inactive_workspace  #696969 #000000  	#696969
-		urgent_workspace    #EE0000 #000000 	#EE0000
-    }
-}
+#bar {
+#	position top
+#    status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#	i3bar_command i3bar -t
+#    colors {
+#		background #050505100
+#		separator #FFFFFF
+#		#                   border  background	text
+#		focused_workspace	#00EE00	#00000070 	#00EE00
+#		inactive_workspace  #696969 #000000  	#696969
+#		urgent_workspace    #EE0000 #000000 	#EE0000
+#    }
+#}
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -229,6 +231,7 @@ exec urxvt
 exec conky
 exec subl
 exec pulseaudio --start
+exec dhcpcd enp2s0
 
 #restart i3
 exec_always setxkbmap -layout de
@@ -237,4 +240,4 @@ exec_always pulseaudio --restart
 exec_always compton -f
 exec_always xrdb .Xresources 
 exec_always sudo timedatectl set-timezone Europe/Berlin
-
+exec_always . ~/.config/polybar/launch.sh
