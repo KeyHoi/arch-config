@@ -1,12 +1,3 @@
-;=====================================================
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
-;
-;   The README contains alot of information
-;
-;=====================================================
-
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #aa2222100
@@ -48,10 +39,10 @@ module-margin-right = 3
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
-font-3 = fontawesome:pixelsize=13
+font-3 = fontawesome:pixelsize=12
 
-modules-left = i3 xwindow
-modules-center = date
+modules-left = i3
+modules-center = wlan date eth
 modules-right = volume filesystem battery powermenu
 
 tray-position = right
@@ -93,7 +84,7 @@ interval = 30
 mount-0 = /
 mount-1 = /home
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-} %percentage_used%%
+label-mounted = %{F#00EE00}%mountpoint%%{F-} %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -127,41 +118,31 @@ strip-wsnumbers = true
 pin-workspaces = true
 
 label-mode-padding = 4
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
+label-mode-foreground = #EE0000
+label-mode-background = 
 
 ; focused = Active workspace on focused monitor
 label-focused = %name% %icon%
 label-focused-foreground = #00EE00
-label-focused-background = 
-label-focused-padding = ${module/bspwm.label-focused-padding}
+label-focused-background = #444
+label-focused-padding = 4
+label-focused-underline = #ffb52a
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name% %icon%
-label-unfocused-foreground = #FFA500
+label-unfocused-foreground = #FFFFFF
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name% %icon%
 label-visible-background = ${self.label-focused-background}
-label-visible-foreground = #FFA500
+label-visible-foreground = #FFFFFF
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %name% %icon%
 label-urgent-foreground = #EE0000
-label-urgent-padding = ${module/bspwm.label-urgent-padding}
-
-ws-icon-0 = 1:
-ws-icon-1 = 2:
-ws-icon-2 = 3:
-ws-icon-3 = 4:
-ws-icon-4 = 5:
-ws-icon-5 = 6:
-ws-icon-6 = 7:
-ws-icon-7 = 8: 
-ws-icon-8 = 9:
-ws-icon-9 = 10:
+label-urgent-padding = #EE0000
 
 [module/spotify]
 type = custom/script
@@ -221,14 +202,18 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = 
+interface = wlp3s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-label-connected = %essid%
+format-connected-prefix = " "
+format-connected = <label-connected>
+format-connected-foreground = #7cfc00
+label-connected = up 
 
-format-disconnected =
+format-disconnected-prefix = " "
+format-disconnected = <label-disconnected>
+format-disconnected-foreground = #EE0000
+label-disconnected = down 
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -243,19 +228,18 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = 
+interface = enp2s0
 interval = 3.0
 
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+format-connected-prefix = " "
+format-connected-prefix-foreground = #7cfc00
+label-connected-foreground = #7cfc00
+label-connected = up
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected-prefix = " "
+format-disconnected = <label-disconnected>
+format-disconnected-foreground = #EE0000
+label-disconnected = down 
 
 [module/date]
 type = internal/date
@@ -267,7 +251,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-label-foreground = #00EE00
+label-foreground = #FFFFFF
 
 label =  %date%  %time%
 
@@ -280,18 +264,18 @@ format-volume = <bar-volume>
 ;label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
+format-muted-foreground = #00EE00
 label-muted = Muted
-label-muted-foreground = #66
+label-muted-foreground = #00EE00
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = #EE0000
+bar-volume-foreground-1 = #EE0000
+bar-volume-foreground-2 = #EE0000
+bar-volume-foreground-3 = #EE0000
+bar-volume-foreground-4 = #EE0000
+bar-volume-foreground-5 = #EE0000
+bar-volume-foreground-6 = #EE0000
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -314,12 +298,12 @@ battery = BAT0
 adapter = AC0
 full-at = 98
 
-format-charging-prefix = " "
+format-charging-prefix = 
 format-charging = <animation-charging> <label-charging>
 format-charging-foreground = #EEEE00
 label-charging-foreground = #EEEE00
 
-format-discharging-prefix = "DIS "
+format-discharging-prefix = 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-foreground = #FFA500
 label-discharging-foreground = #FFA500
@@ -328,15 +312,15 @@ format-full-prefix = " "
 format-full-prefix-foreground = #00EE00
 label-full-foreground = #00EE00
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = #FFA500
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = #EEEE00
 animation-charging-framerate = 750
 
 [module/temperature]
