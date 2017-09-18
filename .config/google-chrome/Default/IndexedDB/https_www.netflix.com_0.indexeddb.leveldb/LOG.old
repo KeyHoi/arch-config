@@ -1,6 +1,0 @@
-2017/06/15-21:55:59.613 19540 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/MANIFEST-000001
-2017/06/15-21:55:59.613 19540 Recovering log #18
-2017/06/15-21:55:59.618 19540 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/000018.log 
-2017/06/15-23:16:00.517 23242 Level-0 table #23: started
-2017/06/15-23:16:00.760 23242 Level-0 table #23: 2411224 bytes OK
-2017/06/15-23:16:00.839 23242 Delete type=0 #18

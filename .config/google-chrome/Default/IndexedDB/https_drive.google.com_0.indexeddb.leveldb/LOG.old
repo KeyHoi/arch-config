@@ -1,9 +1,0 @@
-2017/06/23-16:24:24.712 15747 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2017/06/23-16:24:24.713 15747 Recovering log #110
-2017/06/23-16:24:24.785 15747 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000110.log 
-2017/06/23-16:24:25.824 25923 Level-0 table #114: started
-2017/06/23-16:24:25.910 25923 Level-0 table #114: 904319 bytes OK
-2017/06/23-16:24:26.000 25923 Delete type=0 #110
-2017/06/23-16:24:26.985 25923 Level-0 table #116: started
-2017/06/23-16:24:27.100 25923 Level-0 table #116: 924424 bytes OK
-2017/06/23-16:24:27.166 25923 Delete type=0 #113
