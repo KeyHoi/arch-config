@@ -1,0 +1,335 @@
+Delivered-To: phamdominik1805@gmail.com
+Received: by 10.103.45.214 with SMTP id t205csp319558vst;
+        Thu, 5 Oct 2017 01:09:29 -0700 (PDT)
+X-Google-Smtp-Source: AOwi7QCRmST4SXxah3XPBoIC5VpBVlJ7I7FPlf1WQ79TWGEx34HnY8oKrcyKLrFI1No/trHxS/4t
+X-Received: by 10.223.157.142 with SMTP id p14mr21219935wre.104.1507190969204;
+        Thu, 05 Oct 2017 01:09:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1507190969; cv=none;
+        d=google.com; s=arc-20160816;
+        b=d2iADKsaIiBG09pJA9i24E568iagICrS1ckPAFDIYhdh0MqwvnljxThuWuvC2gPfpR
+         qz9+D+lePFFBm8OUNZnEZeaCOle35Y/r1ce9YkJPFuTxnIzvnE/1yuhI4wj20m9cEWiL
+         rxZD7lvB0N2yjDBcQe6inRUvLAAq1K+/peUtDbSWn2EfoqNWDodVyh8fVqfKiS27dcyb
+         9DX4HJUE0GnaHd+RVGkVHUEdDLf7JThJyd7tA5GVwdVDQ2sZQ8vahYuWh4IyjkxVnNH4
+         ddD/3q7JVDvgwOm37tudKg1eI3dUXbiT7jZM5IVX6Hy1UBPYUW7TvUkiyS1GOvli6nY1
+         vTFA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:reply-to:subject:from:to:mime-version:list-id
+         :list-unsubscribe:dkim-signature:arc-authentication-results;
+        bh=jG1kkrXF7vhexpwvv52bZ8NV5v4Uq03r5eOVFRycle4=;
+        b=M3K71LbvYEGL68seqpx3erppXZ32eoug/RY1sJkw0VsBkasX3VvpGyASZau0bQBXIc
+         deAOwiY3C6OqIiSxnF/+KdFlvYVYwU5Rvl5RspjGrUBSGmRvJlbbE8i+Zv7LolO2Sn/l
+         91e71Gg8VJ03W6MKlsJuFt2LhA915rfrwfteKui8ldFZztLixN3OTKH0O3z52yt0ulkn
+         OFgX3OAVQs60h33nbHA1aPQbZKSRBcNiegz/Qek6u5H+4fpHEKa2Wbm6u0XVw/JfL514
+         P0/NJyj4NR2CyL8njo2n3PUGfl8A+WRnTBmFDZ4zTtdBQn+iBkI8HMQOkq1TlMO7c2f4
+         AAXg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@newsversand.buecher.de header.s=key2 header.b=n+qhXWIE;
+       spf=pass (google.com: domain of srs0=b87l=be=e3us.emarsys.net=e3us-38027788902-2866ii7393abii3@srs.web.de designates 212.227.15.3 as permitted sender) smtp.mailfrom=SRS0=B87l=BE=e3us.emarsys.net=e3us-38027788902-2866II7393abII3@srs.web.de;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=newsversand.buecher.de
+Return-Path: <SRS0=B87l=BE=e3us.emarsys.net=e3us-38027788902-2866II7393abII3@srs.web.de>
+Received: from mout.web.de (mout.web.de. [212.227.15.3])
+        by mx.google.com with ESMTPS id g47si8986618wrg.136.2017.10.05.01.09.28
+        for <phamdominik1805@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 05 Oct 2017 01:09:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of srs0=b87l=be=e3us.emarsys.net=e3us-38027788902-2866ii7393abii3@srs.web.de designates 212.227.15.3 as permitted sender) client-ip=212.227.15.3;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@newsversand.buecher.de header.s=key2 header.b=n+qhXWIE;
+       spf=pass (google.com: domain of srs0=b87l=be=e3us.emarsys.net=e3us-38027788902-2866ii7393abii3@srs.web.de designates 212.227.15.3 as permitted sender) smtp.mailfrom=SRS0=B87l=BE=e3us.emarsys.net=e3us-38027788902-2866II7393abII3@srs.web.de;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=newsversand.buecher.de
+Received: from [212.227.15.17] ([212.227.15.17]) by mx-ha.web.de (mxweb013
+ [212.227.15.17]) with ESMTPS (Nemesis) id 1Mejez-1dPJUb0wVR-00bMJh for
+ <phamdominik1805@gmail.com>; Thu, 05 Oct 2017 10:09:28 +0200
+Received: from uspmta173047.emarsys.net ([195.54.173.47]) by mx-ha.web.de
+ (mxweb013 [212.227.15.17]) with ESMTPS (Nemesis) id 1N64dw-1dFaaW0wP2-016uz2
+ for <dominik_pham@web.de>; Thu, 05 Oct 2017 10:09:28 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=key2; d=newsversand.buecher.de;
+ h=List-Unsubscribe:List-Id:MIME-Version:To:From:Subject:Reply-To:Content-Type:Message-ID:Date; i=news@newsversand.buecher.de;
+ bh=jG1kkrXF7vhexpwvv52bZ8NV5v4Uq03r5eOVFRycle4=;
+ b=n+qhXWIE2Llvcs1Oo0nJDoa/5Tx/EXafkpQT6w4NhIId0ffEMHRwIy7XgFeY9gb2bTY6cbqJ4wMN
+   8s4s2gofkS2L0vcSbBbi+GRTlajvK2vQ5C+aI58ziio8ecgOi4/qIjsBirSOtitbAW6h4X5/tysP
+   VsC2GisbQpRuRsZtmj0=
+Received: from e3.emarsys.net (10.33.1.31) by uspmta173047.emarsys.net id hqnkbg16nmcp for <dominik_pham@web.de>; Thu, 5 Oct 2017 10:09:27 +0200 (envelope-from <e3us-38027788902-2866II7393abII3@e3us.emarsys.net>)
+X-EMarSys-Identify: 5028_38027788872_38027788902_2866II7393abII8daa20266II3
+X-EMarSys-Environment: e3us
+List-Unsubscribe: <mailto:e3usII0II2866II7393abII8daa20266II3@unsubscribe.emarsys.net>, <http://news.buecher.de/r/link/1bdc2II8daa23381II2866II7393abII8daa20266II3/news.buecher.de%2Fr%2Funsubscribe%2F0II2866II7393abII8daa20266II3>
+X-Report-Abuse: Please report abuse here: abuse-report@emarsys.com
+List-Id: =?UTF-8?Q?5028=20<b=C3=BCcher.de=20portofrei=3E?=
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+To: dominik_pham@web.de
+From: =?UTF-8?Q?b=C3=BCcher.de=20portofrei?= <news@newsversand.buecher.de>
+Subject: =?UTF-8?Q?Herzlichen=20Gl=C3=BCckwunsch=20zum=20Geburtstag,=20Frau=20Nguyen!?=
+Reply-To: "Bitte nicht antworten" <news@newsversand.buecher.de>
+Content-Type: multipart/alternative; boundary="_----------=_112358201558820"
+Message-ID: <0.1.29.71C.1D33DB143C682DC.0@uspmta173047.emarsys.net>
+Date: Thu, 5 Oct 2017 10:09:27 +0200
+X-UI-Out-Filterresults: notjunk:1;V01:K0:Q2HSue+57s0=:jjiAqG812LCYcKr95WKNTj
+ VUxZAV2+SDq+r/Clr3W9YWe9Dh6d69ITELXY81qyH9oHb5FC5ZnTOw1EHh+nfujACh9ZAuAh2
+ P9tSGBtwAoMqulOPTzQcfdVW0Djn66UP9l5oR0m1384S3NHHyOaWha3EOSkrTzS49ZWesreAn
+ VcMMHVr0do1B1WqfkuiJCboieI8Kg/7MDd+RQDkoAy6h5Qa1tQvTHIOGJROr7kVLmQNkBMrCs
+ BoGoQz9Cute/V7rW8AiWbSASU6CHSMNWQXOYghuThS3FvvRmPU2BxZPAddz99sRZNza2ySiQx
+ 0VpxsoSjFRS7etKZj+8pNdHGwLhM6wT53jeBOONWzQl8AJbfiyQxDz/C1Y/xncgywqRixkxY7
+ FgphRX5CgcoU01ckTKv8nrrGPSc7SAkidyvYk6bP+6R4jKjjco8XdzaQevio7qSVIsjudbmAF
+ qaaCT4kCq3AGTQB+uMdGoARmECUiK5yE8VVdriF8dh1aGL/lGxPLvCJi4czGDGbMHbPq4YxwW
+ WKdj8vg1efIpE1krC73zCetUzExt7dpxn0+G4bbzkt44akxab/VPURflBucrCm2fLaNsRB5Oh
+ +MlVOsVtsN4lzDlkWPqFXD/FpJlc6oIJLl1cUk+is8sNsV72i4fNZxhRrd6lKTcCrn6cA/0J9
+ 7dL9YoCBBFgqfjE0v4cOuDxNiAZAYfA/Z2DTWUlEmEXqJKyhLaN+2nSrTwbcmqnWGe6S0PVwb
+ 5MRnA4bBiNALWk91/wwb5bgoeb00rWPhbWN4a2epS77+kTrqJK5suzOjtcCKxG3jh7Fv5we4z
+ qrjIXrm5VJuy1W1NOAta/iH8TnIuF0W7PeCXmCO4JMTEJVQBa0JKQvvcgh/d9uEp/eXIXUUim
+ MAW2Z+Y04Ggjx0BYMjx2dVstt4E0MOE7Uocm7UFtFT6JUlpsCtnbXBHr4V3NhWoej+Z6Fu9K/
+ tFk0Ik+orY0J0TRxJLG5rRwEoQhzu7iIY0l9Hr9OfzJC0fwsCw70WYLUlHC/tgVLN45+lxhnc
+ FyGcBTXEwJcnnHq56VFmztKGNd6jacQU9eCq76hD955njYVUwmq8GMDGTlmYLjjkFlicU+R8g
+ yMHPsJRlEA1twM1ybHWhhlJ0LjHoRmXXw5vJEZwcwOE+qAn+501pX1UyKHCDtOxdf0OUZp+35
+ iZp+YIeOrVaA+nnV2wOkodRPE2AkwjX/kTv0OPpeloNRCWtw==
+
+
+--_----------=_112358201558820
+Content-Type: text/plain;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=
+Alles Gute zum Geburtstag!  =0A=0A =0A=0AF=C3=BCr das neue Lebensjahr w=C3=
+=BCnschen wir Ihnen viel Gl=C3=BCck,  =0A=0AGesundheit und Erfolg.  =0A=0A=
+ =0A=0AHier finden Sie ein kleine =C3=9Cberraschung:  =0A=0Ahttp://news.bu=
+echer.de/r/link/681c7II8daa20263II=
+2866II7393abII8daa20266II3=
+/=
+dominik_pham%40web.de=
+%2Fhash%2F=
+327A720F5591511E=
+  =0A=0A =0A=0AIhr buecher.de Team       =0A=0A =0A=0A =0A=0A =0A=0ABitte =
+antworten Sie nicht auf diese E-Mail. =0A=0ADie Antworten sind nicht zuste=
+llbar. Bei Fragen steht Ihnen unser =0A=0AKundenservice unter folgendem Li=
+nk gerne zur Verf=C3=BCgung: =0A=0A =0A=0Ahttp://news.buecher.de/r/link/58=
+797II8daa20264II=
+2866II7393abII8daa20266II3=
+ =0A=0A =0A=0A =0A=0A =0A=0AImpressum =0A=0A--------- =0A=0A =0A=0Abuecher=
+.de GmbH & Co. KG =0A=0AAmtsgericht Augsburg HRA 13309 =0A=0APers=C3=B6nl=
+ich haftender Gesellschafter: =0A=0Abuecher.de Verwaltungs GmbH  =0A=0AAmt=
+sgericht Augsburg HRB 16890 =0A=0AGesch=C3=A4ftsf=C3=BChrer: G=C3=BCnter H=
+ilger, Clemens Todd=0A=0A  Sitz der Gesellschaft: Augsburg =0A=0AUst-IdNr.=
+ DE 204210010 =0A=0A =0A=0A =0A=0AKontakt =0A=0A------- =0A=0A =0A=0Abuech=
+er.de GmbH & Co. KG =0A=0ATelefon: (01803) 001 579 =0A=0A(9 Ct./Min. Festn=
+etz, Mobil max 42 Ct/Min) =0A=0AServicezeiten: =0A=0AMontag bis Samstag vo=
+n 8:00 bis 20:00 Uhr =0A=0ATelefax: (0821) 4502 299 =0A=0AE-Mail: service@=
+buecher.de =0A=0A =0A=0A =0A=0A =0A=0AZum Abbestellen des Newsletters verw=
+enden Sie bitte folgenden Link:  =0A=0A =0A=0Ahttp://news.buecher.de/r/lin=
+k/a059II8daa20265II=
+2866II7393abII8daa20266II3
+
+--_----------=_112358201558820
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">=0A=0A<html xmlns=3D"http:=
+//www.w3.org/1999/xhtml">=0A=0A<head>=0A=0A<meta http-equiv=3D"Content-Typ=
+e" content=3D"text/html; charset=3Dutf-8" />=0A=0A<title>b&uuml;cher.de-Ne=
+wsletter</title>=0A=0A<meta name=3D"description" content=3D"Mit dem bueche=
+r.de-Newsletter seid Ihr immer aktuell informiert &uuml;ber: Die Topseller=
+ der Woche, die neuesten Buch-, CD-, DVD- und Software-Erscheinungen, unse=
+ren Megaschn&auml;ppchen mit denen Ihr bis zu 90% spart, Extra-Webmiles- u=
+nd Gutschein-Aktionen unseren neuesten Online-Gewinnspielen mit fantastisc=
+hen Preisen und vielen mehr!" /> =0A=0A<link rel=3D"image_src"  type=3D"im=
+age/jpeg"   href=3D"http://bilder.buecher.de/images/logo_180.gif" />=0A=0A=
+</head>=0A=0A<body style=3D"color:#333333"><img src=3D"http://news.buecher=
+.de/r/webbug/=
+2866II7393abII8daa20266II3=
+.gif" width=3D"1" height=3D"1">=0A=0A<table cellpadding=3D"5" cellspacing=
+=3D"5" border=3D"0" width=3D"600" style=3D"border:solid 1px #ccc"><tr><td>=
+=0A=0A=09<table width=3D"600" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0">=0A=0A=09=09<tr>=0A=0A=09=09=09<td style=3D"font-size:0">=0A=0A=09=
+=09=09=09<img src=3D"http://bilder.buecher.de/shop/newsletter/grafiken/all=
+/redesign/header.jpg" border=3D"0" alt=3D"b&uuml;cher.de NEWLSLETTER" usem=
+ap=3D"#navi_map"/>=0A=0A=09=09=09=09<map name=3D"navi_map">=0A=0A=09=09=09=
+=09=09<area shape=3D"rect" coords=3D"0,0,134,20" alt=3D"Alles immer portof=
+rei" title=3D"Alles immer portofrei" href=3D"http://news.buecher.de/r/link=
+/46e2cII8daa2024cII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"14=
+0,0,300,20" alt=3D"Kostenloser R&uuml;ckversand" title=3D"Kostenloser R&uu=
+ml;ckversand" href=3D"http://news.buecher.de/r/link/67832II8daa2024dII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"30=
+4,0,480,20" alt=3D"Zahlung auf Rechnung" title=3D"Zahlung auf Rechnung" hr=
+ef=3D"http://news.buecher.de/r/link/247edII8daa2024eII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=09=09=09=09=09=0A=0A=09=09=09=09=09<area shape=3D"rec=
+t" coords=3D"0,25,600,84" alt=3D"b&uuml;cher.de" title=3D"b&uuml;cher.de" =
+href=3D"http://news.buecher.de/r/link/25bfeII8daa2024fII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=09=09=09=09=09=0A=0A=09=09=09=09=09<area shape=3D"rec=
+t" coords=3D"0,90,57,116" alt=3D"B&uuml;cher" title=3D"B&uuml;cher" href=
+=3D"http://news.buecher.de/r/link/41a86II8daa20250II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"59=
+,90,111,116" alt=3D"eBooks" title=3D"eBooks" href=3D"http://news.buecher.d=
+e/r/link/478efII8daa20251II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"11=
+3,90,181,116" alt=3D"H&ouml;rb&uuml;cher" title=3D"H&ouml;rb&uuml;cher" hr=
+ef=3D"http://news.buecher.de/r/link/28807II8daa20252II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=09=09=09=09=09=09=0A=0A=09=09=09=09=09<area shape=3D"=
+rect" coords=3D"183,90,226,116" alt=3D"Musik" title=3D"Musik" href=3D"http=
+://news.buecher.de/r/link/4671bII8daa20253II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=09=09=09=09=09=09=0A=0A=09=09=09=09=09<area shape=3D"=
+rect" coords=3D"228,90,271,116" alt=3D"Filme" title=3D"Filme" href=3D"http=
+://news.buecher.de/r/link/67d21II8daa20254II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"27=
+3,90,324,116" alt=3D"Games" title=3D"Games" href=3D"http://news.buecher.de=
+/r/link/45365II8daa20255II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"32=
+6,90,390,116" alt=3D"Spielzeug" title=3D"Spielzeug" href=3D"http://news.bu=
+echer.de/r/link/7838fII8daa20256II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"39=
+2,90,457,116" alt=3D"Elektronik" title=3D"Elektronik" href=3D"http://news.=
+buecher.de/r/link/18e7II8daa20257II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"45=
+9,90,550,116" alt=3D"Wohnen &amp; Deko" title=3D"Wohnen &amp; Deko" href=
+=3D"http://news.buecher.de/r/link/13651II8daa20258II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09=09<area shape=3D"rect" coords=3D"55=
+2,90,600,116" alt=3D"Schn&auml;ppchen" title=3D"Schn&auml;ppchen" href=3D"=
+http://news.buecher.de/r/link/6338fII8daa20259II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">=0A=0A=09=09=09=09</map>=0A=0A=09=09=09</td>=0A=0A=09=
+=09</tr>=0A=0A=09</table> =0A=0A<table width=3D"600" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0">=0A=0A=09<tr>=0A=0A            <td width=3D"60=
+0"><a href=3D"http://news.buecher.de/r/link/2fa5dII8daa2025aII=
+2866II7393abII8daa20266II3=
+/=
+dominik_pham%40web.de=
+%2Fhash%2F=
+327A720F5591511E=
+" target=3D"_blank"><br><img style=3D"display:block;" src=3D"http://bilder=
+.buecher.de/shop/newsletter/grafiken/geburtstag/geburtstagneu.jpg" width=
+=3D"600" height=3D"405" border=3D"0" alt=3D""></a></td>=0A=0A=09</tr>=0A=
+=0A</table> =0A=0A=09<table cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"600">=0A=0A=09=09<tr>=0A=0A=09=09=09<td height=3D"30" style=3D=
+"border-bottom: 1px solid #e6e6e6;">=0A=0A=09=09=09=09<img style=3D"color:=
+white;" src=3D"http://bilder.buecher.de/shop/newsletter/grafiken/all/blind=
+.gif" alt=3D"." />=09=09=09</td>=0A=0A=09=09</tr>=0A=0A=09</table>=09=0A=
+=0A<table cellpadding=3D"5" cellspacing=3D"0" border=3D"0" width=3D"600">=
+=0A=0A=09<tr>=0A=0A=09=09<td colspan=3D"4">=0A=0A=09=09=09<div style=3D"fo=
+nt-size:22px;font-family:Arial, Helvetica, sans-serif;color:#222222;">Ihre=
+ Vorteile bei b&uuml;cher&#046;de:</div>=0A=0A=09=09</td>=0A=0A=09</tr>=0A=
+=0A=09<tr>=0A=0A=09=09<td width=3D"140">=0A=0A=09=09=09<img width=3D"140" =
+border=3D"0" alt=3D"portofrei" src=3D"http://bilder.buecher.de/shop/newsle=
+tter/grafiken/all/redesign/footer_portofrei_small.jpg" />=0A=0A=09=09</td>=
+=0A=0A=09=09<td width=3D"140">=0A=0A=09=09=09<img width=3D"140" border=3D"=
+0" alt=3D"Zahlung bequem per Rechnung ohne Geb&uuml;hr" src=3D"http://bild=
+er.buecher.de/shop/newsletter/grafiken/all/redesign/footer_zahlung_small.j=
+pg" />=0A=0A=09=09</td>=0A=0A=09=09<td width=3D"140">=0A=0A=09=09=09<img w=
+idth=3D"140" border=3D"0" alt=3D"Sicheres Einkaufen" src=3D"http://bilder.=
+buecher.de/shop/newsletter/grafiken/all/redesign/footer_trusted_small.jpg"=
+ />=0A=0A=09=09</td>=0A=0A=09=09<td width=3D"140">=0A=0A=09=09=09<img widt=
+h=3D"140" border=3D"0" alt=3D"Sicheres Einkaufen" src=3D"http://bilder.bue=
+cher.de/shop/newsletter/grafiken/all/redesign/footer_payback_small.jpg" />=
+=0A=0A=09=09</td>=0A=0A=09</tr>=0A=0A=09<tr>=0A=0A=09=09<td>=0A=0A=09=09=
+=09<div style=3D"font-size:12px; font-family:Arial, Helvetica, sans-serif;=
+color:#222222;">Versandkostenfreie Lieferung in Deutschland</div>=0A=0A=09=
+=09</td>=0A=0A=09=09<td>=0A=0A=09=09=09<div style=3D"font-size:12px; font-=
+family:Arial, Helvetica, sans-serif;color:#222222;">Zahlung bequem per Rec=
+hnung ohne Geb&uuml;hr</div>=0A=0A=09=09</td>=0A=0A=09=09<td>=0A=0A=09=09=
+=09<div style=3D"font-size:12px; font-family:Arial, Helvetica, sans-serif;=
+color:#222222;">Sicheres Einkaufen<br />Gepr&uuml;fter Online-Shop</div>=
+=0A=0A=09=09</td>=0A=0A=09=09<td>=0A=0A=09=09=09<div style=3D"font-size:12=
+px; font-family:Arial, Helvetica, sans-serif;color:#222222;">PAYBACK Punkt=
+e sammeln bei b&uuml;cher&#046;de</div>=0A=0A=09=09</td>=0A=0A=09</tr>=0A=
+=0A</table>=0A=0A=09<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" width=3D"600">=0A=0A=09=09<tr>=0A=0A=09=09=09<td height=3D"30" style=3D"=
+border-bottom: 1px solid #e6e6e6;">=0A=0A=09=09=09=09<img style=3D"color:w=
+hite;" src=3D"http://bilder.buecher.de/shop/newsletter/grafiken/all/blind.=
+gif" alt=3D"." />=09=09=09</td>=0A=0A=09=09</tr>=0A=0A=09</table>=09=09=0A=
+=0A=09<table width=3D"600" cellpadding=3D"0" cellspacing=3D"10">=0A=0A=09=
+=09<tr>=0A=0A=09=09=09<td width=3D"310" valign=3D"top">=0A=0A=09=09=09=09<=
+div style=3D"font-size:14px; font-family:Arial, Helvetica, sans-serif;"><b=
+>Impressum</b></div><br />=0A=0A=09=09=09=09<div style=3D"font-size:11px; =
+font-family:Arial, Helvetica, sans-serif;">buecher&#046;de GmbH &amp; Co. =
+KG<br />=0A=0A=09=09=09=09Amtsgericht Augsburg HRA 13309<br />=0A=0A=09=09=
+=09=09Pers&ouml;nlich haftender Gesellschafter:<br />=0A=0A=09=09=09=09bue=
+cher.de Verwaltungs GmbH <br />Amtsgericht Augsburg HRB 16890<br />=0A=0A=
+=09=09=09=09Gesch&auml;ftsf&uuml;hrer: Clemens Todd, G&uuml;nter Hilger <b=
+r />=0A=0A=09=09=09=09Sitz der Gesellschaft: Augsburg<br />=0A=0A=09=09=09=
+=09Ust-IdNr. DE 204210010<br />=0A=0A=09=09=09=09</div>=0A=0A=09=09=09</td=
+>=0A=0A=09=09=09<td width=3D"260" valign=3D"top">=0A=0A=09=09=09=09<div st=
+yle=3D"font-size:14px; font-family:Arial, Helvetica, sans-serif;"><b>Konta=
+kt</b></div><br />=0A=0A=09=09=09=09<div style=3D"font-size:11px; font-fam=
+ily:Arial, Helvetica, sans-serif;">buecher&#046;de GmbH &amp; Co. KG<br />=
+=0A=0A=09=09=09=09Telefon: (01806) 001 579 <br />(20 Ct./Anruf dt. Festnet=
+z, max. 60 Ct./Anruf dt. Mobilfunk)<br />=0A=0A=09=09=09=09Servicezeiten: =
+<br />Montag bis Samstag von 8:00 bis 20:00 Uhr<br />=0A=0A=09=09=09=09Tel=
+efax: (0821) 4502 299<br />=0A=0A=09=09=09=09E-Mail: service@buecher.de<br=
+ />=0A=0A=09=09=09=09<a style=3D"color:#50aa9c;text-decoration:none;" href=
+=3D"http://news.buecher.de/r/link/3181bII8daa2025bII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank">Datenschutz</a><br />=0A=0A=09=09=09=09</div>=09=09=09=
+=09=0A=0A=09=09=09</td>=0A=0A=09=09</tr>=0A=0A=09=09<tr>=0A=0A=09=09=09<td=
+ colspan=3D"2">=0A=0A=09=09=09=09<div style=3D"font-size:11px; font-family=
+:Arial, Helvetica, sans-serif;">=0A=0A=09=09=09=09=09Bitte antworten Sie n=
+icht auf diese E-Mail.=0A=0A=09=09=09=09=09Die Antworten sind nicht zustel=
+lbar. Bei Fragen steht Ihnen unser =0A=0A=09=09=09=09=09Kundenservice unte=
+r <a href=3D"http://news.buecher.de/r/link/5ac94II8daa2025cII=
+2866II7393abII8daa20266II3=
+" style=3D"color:#50aa9c;text-decoration:none;" target=3D"_blank">www.buec=
+her.de/servicemail</a> gerne zur Verf&uuml;gung.<br /><br />=0A=0A=09=09=
+=09=09=09*Alle Preise verstehen sich inkl. MwSt. Innerhalb Deutschlands li=
+efern wir immer versandkostenfrei. Informationen Ausland: <a href=3D"http:=
+//news.buecher.de/r/link/52a94II8daa2025dII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank" style=3D"color:#333;">klicken Sie bitte hier</a>.<br /=
+>=0A=0A=09=09=09=09</div>=0A=0A=09=09=09</td>=0A=0A=09=09</tr>=0A=0A=09</t=
+able>=09=09=09=09=0A=0A=09<table cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" width=3D"600">=0A=0A=09=09<tr>=0A=0A=09=09=09<td height=3D"30" sty=
+le=3D"border-bottom: 1px solid #e6e6e6;">=0A=0A=09=09=09=09<img style=3D"c=
+olor:white;" src=3D"http://bilder.buecher.de/shop/newsletter/grafiken/all/=
+blind.gif" alt=3D"." />=09=09=09</td>=0A=0A=09=09</tr>=0A=0A=09</table>=0A=
+=0A=09<br />=0A=0A=09<table width=3D"600" cellpadding=3D"0" cellspacing=3D=
+"0">    =0A=0A=09=09<tr>=0A=0A=09=09=09<td width=3D"150" align=3D"center">=
+<a href=3D"http://news.buecher.de/r/link/76801II8daa2025eII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank"><img width=3D"150" src=3D"http://bilder.buecher.de/sho=
+p/newsletter/grafiken/all/redesign/icon_facebook.jpg" border=3D"0" alt=3D"=
+b&uuml;cher.de bei facebook"/></a></td>=0A=0A=09=09=09<td width=3D"150" al=
+ign=3D"center"><a href=3D"http://news.buecher.de/r/link/d8b1II8daa2025fII=
+2866II7393abII8daa20266II3=
+" target=3D"_blank"><img width=3D"150" src=3D"http://bilder.buecher.de/sho=
+p/newsletter/grafiken/all/redesign/icon_instagram.jpg" border=3D"0" alt=3D=
+"b&uuml;cher.de bei instagramm"/></a></td>=0A=0A=09=09=09<td width=3D"150"=
+ align=3D"center"><a href=3D"http://news.buecher.de/r/link/4f6f3II8daa2026=
+0II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank"><img width=3D"150" src=3D"http://bilder.buecher.de/sho=
+p/newsletter/grafiken/all/redesign/icon_twitter.jpg" border=3D"0" alt=3D"b=
+&uuml;cher.de bei twitter"/></a></td>=0A=0A=09=09=09<td width=3D"150" alig=
+n=3D"center"><a href=3D"http://news.buecher.de/r/link/463dbII8daa20261II=
+2866II7393abII8daa20266II3=
+" target=3D"_blank"><img width=3D"150" src=3D"http://bilder.buecher.de/sho=
+p/newsletter/grafiken/all/redesign/icon_blog.jpg" border=3D"0" alt=3D"Der =
+b&uuml;cher.de Blog"/></a></td>    =0A=0A=09=09</tr>=0A=0A=09</table> =09=
+=09=0A=0A=09<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"600">=0A=0A=09=09<tr>=0A=0A=09=09=09<td height=3D"30" style=3D"border-=
+bottom: 1px solid #e6e6e6;">=0A=0A=09=09=09=09<img style=3D"color:white;" =
+src=3D"http://bilder.buecher.de/shop/newsletter/grafiken/all/blind.gif" al=
+t=3D"." />=09=09=09</td>=0A=0A=09=09</tr>=0A=0A=09</table>=0A=0A=09<table =
+width=3D"600" cellpadding=3D"0" cellspacing=3D"10">  =0A=0A=09=09<tr><td><=
+div style=3D"font-size:12px; font-family:Arial, Helvetica, sans-serif; tex=
+t-align:center;"><b>Zum Abbestellen des Newsletters klicken Sie auf folgen=
+den Link: <a style=3D"color:#333" href=3D"http://news.buecher.de/r/link/3d=
+e09II8daa20262II=
+2866II7393abII8daa20266II3=
+/mail%3D=
+dominik_pham%40web.de=
+%26hash%3D=
+07E331E56011F7095511A546BC17D05A=
+">Abmelden</a></b></div></td></tr>    =0A=0A=09</table>=0A=0A</td></tr></t=
+able>=09=0A=0A</body>=0A=0A</html>
+--_----------=_112358201558820--
