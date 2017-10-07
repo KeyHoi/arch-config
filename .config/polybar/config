@@ -44,7 +44,7 @@ font-3 = fontawesome:pixelsize=12
 
 modules-left = i3
 modules-center = wlan date eth
-modules-right = mocp pamixer cpu filesystem battery gmail pkg powermenu
+modules-right = pamixer cpu filesystem battery gmail pkg powermenu
 
 tray-position = right
 tray-padding = 0
@@ -85,7 +85,7 @@ interval = 30
 mount-0 = /
 mount-1 = /home
 
-label-mounted = %{F#4D6FFC}%mountpoint%%{F#FFFFFF} %percentage_used%%
+label-mounted = %{F#FFFFFF}%mountpoint%%{F#056708} %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -381,10 +381,10 @@ type = custom/menu
 
 label-open = 
 label-open-foreground = #EE0000
-label-close =  Cancel
+label-close = Cancel
 label-close-foreground = #EE0000
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = #FFFFFF
 
 menu-0-0 = Suspend
 menu-0-0-exec = systemctl suspend
