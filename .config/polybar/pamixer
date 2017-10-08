@@ -9,12 +9,12 @@ if [[ $mute_state = "true" ]]; then
    exit
 fi
 
-icon_color="%{F#4D6FFC}"
-soft_color="%{F#056708}"
-loud_color="%{F#056708}"
-warn_color="%{F#056708}"
+icon_color="%{F#00EE44}"
+soft_color="%{F#EE0000}"
+loud_color="%{F#EE0000}"
+warn_color="%{F#EE0000}"
 max_color="%{F#EE0000}"
-reset_color="%{F#4D6FFC}"
+reset_color="%{F#00EE44}"
 icon="%{T3}${icon_color}%{T-}"
 indicator="${reset_color}|"
 vol=$(pamixer --get-volume)

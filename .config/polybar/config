@@ -42,9 +42,9 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = fontawesome:pixelsize=12
 
-modules-left = i3
+modules-left = i3 cpu
 modules-center = wlan date eth
-modules-right = pamixer cpu filesystem battery gmail pkg powermenu
+modules-right = pamixer filesystem battery gmail pkg powermenu
 
 tray-position = right
 tray-padding = 0
@@ -322,7 +322,7 @@ label-charging-foreground = #EEEE00
 format-discharging-prefix = 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-foreground = #FFA500
-label-discharging-foreground = #FFA500
+label-discharging-foreground = #00EE44
 
 format-full-prefix = " "
 format-full-prefix-foreground = #00EE00
@@ -332,7 +332,7 @@ ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
-ramp-capacity-foreground = #FFA500
+ramp-capacity-foreground = #00EE44
 
 animation-charging-0 = 
 animation-charging-1 = 
@@ -376,22 +376,37 @@ label-foreground = #FFFFFF
 exec = .config/polybar/pkg.sh
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
 
+
 [module/powermenu]
 type = custom/menu
 
-label-open = 
-label-open-foreground = #EE0000
-label-close = Cancel
+label-open =  
+label-open-foreground = #FFFFFF
+label-close = 
 label-close-foreground = #EE0000
 label-separator = |
-label-separator-foreground = #FFFFFF
+label-separator-foreground = #EE0000
 
-menu-0-0 = Suspend
-menu-0-0-exec = systemctl suspend
-menu-0-1 = Reboot
-menu-0-1-exec = systemctl reboot
-menu-0-2 = Shutdown
-menu-0-2-exec = systemctl poweroff
+menu-0-0 = Power
+menu-0-0-exec = menu-open-1
+menu-0-1 = Xrandr
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = Suspend
+menu-1-0-exec = systemctl suspend
+menu-1-1 = Reboot
+menu-1-1-exec = systemctl reboot
+menu-1-2 = Shutdown
+menu-1-2-exec = systemctl poweroff
+
+menu-2-0 = Laptop  
+menu-2-0-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --off && i3-msg restart
+;menu-2-1 = 
+;menu-2-1-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --right-of LVDS1 && i3-msg restart
+;menu-2-2 =   
+;menu-2-2-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --left-of LVDS1 && i3-msg restart
+menu-2-1 = Monitor  
+menu-2-1-exec = xrandr --output HDMI3 --auto --primary --output LVDS1 --off && i3-msg restart
 
 [global/wm]
 margin-top = 0
