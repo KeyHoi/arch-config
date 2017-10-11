@@ -401,12 +401,12 @@ menu-1-2-exec = systemctl poweroff
 
 menu-2-0 = Laptop  
 menu-2-0-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --off && i3-msg restart
-;menu-2-1 = 
-;menu-2-1-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --right-of LVDS1 && i3-msg restart
-;menu-2-2 =   
-;menu-2-2-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --left-of LVDS1 && i3-msg restart
-menu-2-1 = Monitor  
-menu-2-1-exec = xrandr --output HDMI3 --auto --primary --output LVDS1 --off && i3-msg restart
+menu-2-1 = Laptop_Monitor
+menu-2-1-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --right-of LVDS1 && i3-msg restart
+menu-2-2 = Monitor_Laptop 
+menu-2-2-exec = xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --left-of LVDS1 && i3-msg restart
+menu-2-3 = Monitor  
+menu-2-3-exec = xrandr --output HDMI3 --auto --primary --output LVDS1 --off && i3-msg restart
 
 [global/wm]
 margin-top = 0
