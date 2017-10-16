@@ -126,6 +126,7 @@ assign [class="sublime_text"] $workspace3
 assign [class="jetbrains-pycharm-ce"] $workspace3 
 assign [class="Evince"] $workspace4 
 assign [class="feh"] $workspace4 
+assign [class="Vlc"] $workspace4 
 assign [class="Google-chrome"] $workspace5 
 assign [class="Spotify"] $workspace9
 assign [class="whats-app-nativefier-7bbd2c"] $workspace10
@@ -177,7 +178,7 @@ bindsym $mod+Shift+c exec galculator
 
 bindsym $mod+Shift+S exec scrot '%d-%m-%Y_$p$s_scrot.png' -e 'mv $f ~/Images/Screenshots/'
 
-bindsym $mod+Shift+x exec i3lock -i ~/Images/Wallpaper/login_screen.png
+bindsym $mod+Shift+x exec i3lock -i ~/Images/Wallpaper/wallpaper_rick_and_morty_4.png
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -228,7 +229,7 @@ exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
 exec --no-startup-id urxvt -name dropdown
 exec --no-startup-id subl
 
-exec --no-startup-id i3lock -i ~/Images/Wallpaper/linux-penguin.png
+exec --no-startup-id i3lock -i ~/Images/Wallpaper/wallpaper_rick_and_morty_4.png
 
 exec --no-startup-id pulseaudio --start
 exec --no-startup-id xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --right-of LVDS1 
