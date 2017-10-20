@@ -178,7 +178,7 @@ bindsym $mod+Shift+c exec galculator
 
 bindsym $mod+Shift+S exec scrot '%d-%m-%Y_$p$s_scrot.png' -e 'mv $f ~/Images/Screenshots/'
 
-bindsym $mod+Shift+x exec i3lock -i ~/Images/Wallpaper/wallpaper_rick_and_morty_4.png
+bindsym $mod+Shift+x exec ~/.config/i3/i3lock-multimonitor/lock
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -229,7 +229,7 @@ exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
 exec --no-startup-id urxvt -name dropdown
 exec --no-startup-id subl
 
-exec --no-startup-id i3lock -i ~/Images/Wallpaper/wallpaper_rick_and_morty_4.png
+exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
 
 exec --no-startup-id pulseaudio --start
 exec --no-startup-id xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --right-of LVDS1 
@@ -237,7 +237,7 @@ exec --no-startup-id xbacklight -set 100
 
 # restart i3
 exec_always --no-startup-id setxkbmap -layout de
-exec_always --no-startup-id wal -i ~/Images/Wallpaper/linux-penguin.png
+exec_always --no-startup-id wal -i ~/Images/Wallpaper/linux-penguin.png && feh --bg-scale ~/Images/Wallpaper/wallpaper_rick_and_morty_2.jpg
 exec_always --no-startup-id pulseaudio --start
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id xrdb .Xresources 
