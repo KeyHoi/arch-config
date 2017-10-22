@@ -67,7 +67,7 @@ bindsym $mod+x move workspace to output right
 
 # split in horizontal orientation
 #bindsym $mod+h split h
-bindings $mod+Shift+V split h
+bindsym $mod+Shift+V split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -166,7 +166,7 @@ bindsym $mod+b exec google-chrome-stable https://www.bs.to/andere-serien
 bindsym $mod+a exec arandr
 bindsym $mod+p exec pavucontrol
 
-bindsym $mod+Shift+T exec code
+bindsym $mod+Shift+T exec subl
 
 bindsym $mod+Shift+W exec google-chrome-stable https://web.whatsapp.com
 bindsym $mod+Shift+M exec urxvt -name music -e cmus
