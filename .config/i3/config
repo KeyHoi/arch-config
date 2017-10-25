@@ -90,7 +90,7 @@ set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
 set $workspace7 "7: "
-set $workspace8 "8: "
+set $workspace8 "8: "
 set $workspace9 "9: "
 set $workspace10 "10: "
 
@@ -142,8 +142,9 @@ for_window [class="mtp-ng-qt"] floating enable; move position center
 for_window [class="Galculator"] floating enable  move position center
 for_window [class="Summoners War Exporter"] floating enable; move position center
 
-for_window [instance="filemanager"] move workspace $workspace2
 for_window [instance="terminal"] move workspace $workspace1
+for_window [instance="filemanager"] move workspace $workspace2
+for_window [instance="calendar"] move workspace $workspace8
 for_window [instance="music"] move workspace $workspace9
 for_window [instance="mail"] move workspace $workspace10
 
@@ -169,14 +170,15 @@ bindsym $mod+p exec pavucontrol
 bindsym $mod+Shift+T exec subl
 
 bindsym $mod+Shift+W exec google-chrome-stable https://web.whatsapp.com
-bindsym $mod+Shift+M exec urxvt -name music -e cmus
+#bindsym $mod+Shift+M exec urxvt -name music -e cmus
+bindsym $mod+Shift+M exec google-chrome-stable https://www.gmail.com
 bindsym $mod+s exec spotify -name music
 bindsym $mod+m exec urxvt -name mail -e mutt -F .config/mutt/muttrc
 
 bindsym $mod+Shift+A exec android-file-transfer
 bindsym $mod+Shift+c exec galculator
 
-bindsym $mod+Shift+S exec scrot '%d-%m-%Y_$p$s_scrot.png' -e 'mv $f ~/Images/Screenshots/'
+bindsym $mod+Shift+S exec scrot '%d-%m-%Y_%T.png' -e 'mv $f ~/Images/Screenshots/'
 
 bindsym $mod+Shift+x exec ~/.config/i3/i3lock-multimonitor/lock
 
@@ -205,7 +207,7 @@ workspace $workspace4 gaps inner 0
 workspace $workspace5 gaps inner 0
 workspace $workspace6 gaps inner 0
 workspace $workspace7 gaps inner 0
-workspace $workspace8 gaps inner 0
+workspace $workspace8 gaps inner 20
 workspace $workspace9 gaps inner 20
 workspace $workspace10 gaps inner 20
 
@@ -222,10 +224,11 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # decrease screen brightness
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 #startup
-exec --no-startup-id urxvt -name filemanager -e ranger
 exec --no-startup-id urxvt -name terminal
+exec --no-startup-id urxvt -name filemanager -e ranger
+exec --no-startup-id urxvt -name calendar -e calcurse
 exec --no-startup-id urxvt -name music -e cmus
-exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
+#exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
 exec --no-startup-id urxvt -name dropdown
 exec --no-startup-id subl
 
