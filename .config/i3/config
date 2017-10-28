@@ -14,7 +14,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Droid Sans Mono 12
+#font pango:Droid Sans Mono 12
+font pango:	DejaVu Sans Mono for Powerline 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -123,6 +124,8 @@ bindsym $mod+0 workspace $workspace10
 
 # assign workspaces
 assign [class="sublime_text"] $workspace3 
+assign [class="Geany"] $workspace3 
+assign [class="Atom"] $workspace3 
 assign [class="jetbrains-pycharm-ce"] $workspace3 
 assign [class="Evince"] $workspace4 
 assign [class="feh"] $workspace4 
@@ -167,13 +170,13 @@ bindsym $mod+b exec google-chrome-stable https://www.bs.to/andere-serien
 bindsym $mod+a exec arandr
 bindsym $mod+p exec pavucontrol
 
-bindsym $mod+Shift+T exec subl
+bindsym $mod+Shift+T exec atom
 
 bindsym $mod+Shift+W exec google-chrome-stable https://web.whatsapp.com
-#bindsym $mod+Shift+M exec urxvt -name music -e cmus
-bindsym $mod+Shift+M exec google-chrome-stable https://www.gmail.com
+bindsym $mod+Shift+M exec urxvt -name music -e cmus
 bindsym $mod+s exec spotify -name music
-bindsym $mod+m exec urxvt -name mail -e mutt -F .config/mutt/muttrc
+#bindsym $mod+m exec urxvt -name mail -e mutt -F .config/mutt/muttrc
+bindsym $mod+m exec google-chrome-stable https://www.gmail.com
 
 bindsym $mod+Shift+A exec android-file-transfer
 bindsym $mod+Shift+c exec galculator
@@ -229,8 +232,8 @@ exec --no-startup-id urxvt -name filemanager -e ranger
 exec --no-startup-id urxvt -name calendar -e calcurse
 exec --no-startup-id urxvt -name music -e cmus
 #exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
-exec --no-startup-id urxvt -name dropdown
-exec --no-startup-id subl
+exec --no-startup-id termite --name dropdown
+exec --no-startup-id atom
 
 exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
 
