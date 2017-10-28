@@ -39,7 +39,7 @@ bindsym $mod+Shift+q kill
 bindsym button5 kill
 
 # start rofi
-bindsym $mod+d exec rofi -show run -fg "#00EE00" -bg "#000000" -hlfg "#000000" -hlbg "#00EE00" -lines 5 -separator-style "none" -font "DefaVu Sans Mono 15"
+bindsym F3 exec rofi -show run -fg "#00EE00" -bg "#000000" -hlfg "#000000" -hlbg "#00EE00" -lines 5 -separator-style "none" -font "DefaVu Sans Mono 15"
 
 # change focus
 bindsym $mod+Left focus left
@@ -183,7 +183,9 @@ bindsym $mod+Shift+c exec galculator
 
 bindsym $mod+Shift+S exec scrot '%d-%m-%Y_%T.png' -e 'mv $f ~/Images/Screenshots/'
 
-bindsym $mod+Shift+x exec ~/.config/i3/i3lock-multimonitor/lock
+bindsym $mod+d exec xrandr --output LVDS1 --auto --primary --output HDMI3 --off
+bindsym $mod+Shift+D exec xrandr --output HDMI3 --auto --primary --output LVDS1 --off
+bindsym $mod+Shift+X exec ~/.config/i3/i3lock-multimonitor/lock
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
