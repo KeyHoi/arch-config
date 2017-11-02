@@ -5,10 +5,15 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+
 alias ls='ls --color=auto'
-alias vim='vim -u .vim/vimrc'
-#PS1='$(alsi -l)\n\n[\u@\h \w]\n> '
+#alias cd='cd && clear'
 PS1='[\u@\h \w]\n> '
-# (wal -r &)
 setsid wal -r
 clear
+
+export PATH="${PATH}:~/.intellij-idea/bin"

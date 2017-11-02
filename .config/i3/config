@@ -127,6 +127,7 @@ assign [class="sublime_text"] $workspace3
 assign [class="Geany"] $workspace3 
 assign [class="Atom"] $workspace3 
 assign [class="jetbrains-pycharm-ce"] $workspace3 
+assign [class="jetbrains-idea"] $workspace3 
 assign [class="Evince"] $workspace4 
 assign [class="feh"] $workspace4 
 assign [class="Vlc"] $workspace4 
