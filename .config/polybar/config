@@ -43,9 +43,9 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = fontawesome:pixelsize=12
 
-modules-left = i3 cpu
-modules-center = wlan date eth
-modules-right = spotify pamixer filesystem battery gmail pkg powermenu
+modules-left = i3 cpu pkg
+modules-center = wlan date eth spotify 
+modules-right = pamixer filesystem battery powermenu
 
 tray-position = right
 tray-padding = 0
@@ -204,7 +204,7 @@ interval = 1.0
 
 format-connected = <label-connected>
 format-connected-foreground = #7cfc00
-label-connected =  %downspeed%
+label-connected =  
 
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = #EE0000
@@ -224,7 +224,7 @@ interval = 1.0
 
 format-connected-prefix-foreground = #7cfc00
 label-connected-foreground = #7cfc00
-label-connected =  %downspeed%
+label-connected =  
 
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = #EE0000
