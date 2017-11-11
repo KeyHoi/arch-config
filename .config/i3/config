@@ -241,7 +241,6 @@ exec --no-startup-id atom
 exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
 
 exec --no-startup-id pulseaudio --start
-exec --no-startup-id xrandr --output LVDS1 --auto --primary --output HDMI3 --auto --right-of LVDS1 
 exec --no-startup-id xbacklight -set 100
 
 # restart i3

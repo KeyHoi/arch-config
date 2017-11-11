@@ -44,7 +44,7 @@ font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = fontawesome:pixelsize=12
 
 modules-left = i3 cpu pkg
-modules-center = wlan date eth spotify 
+modules-center = wlan date eth 
 modules-right = pamixer filesystem battery powermenu
 
 tray-position = right
