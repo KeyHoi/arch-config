@@ -93,7 +93,7 @@ set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
 set $workspace9 "9: "
-set $workspace10 "10: "
+set $workspace10 "10: "
 
 #toggle transparency of focused window
 bindsym $mod+q exec . ~/.scripts/flash_win.sh
@@ -146,7 +146,6 @@ for_window [class="mtp-ng-qt"] floating enable; move position center
 for_window [class="Galculator"] floating enable  move position center
 for_window [class="Summoners War Exporter"] floating enable; move position center
 
-for_window [instance="terminal"] move workspace $workspace1
 for_window [instance="filemanager"] move workspace $workspace2
 for_window [instance="calendar"] move workspace $workspace8
 for_window [instance="music"] move workspace $workspace9

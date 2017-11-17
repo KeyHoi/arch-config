@@ -20,5 +20,4 @@ PS1='[\u@\h \w]\n> '
 setsid wal -r
 clear
 
-export PATH="${PATH}:~/.intellij-idea/bin"
 export PATH="${PATH}:~/.scripts/"
