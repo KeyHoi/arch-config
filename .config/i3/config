@@ -128,6 +128,7 @@ assign [class="Geany"] $workspace3
 assign [class="Atom"] $workspace3 
 assign [class="jetbrains-pycharm"] $workspace3 
 assign [class="jetbrains-idea"] $workspace3 
+assign [class="libreoffice"] $workspace3 
 assign [class="Evince"] $workspace4 
 assign [class="feh"] $workspace4 
 assign [class="Vlc"] $workspace4 
@@ -158,6 +159,9 @@ for_window [instance="dropdown"] move position center
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 1
 
+floating_minimum_size 1000 x 600
+floating_maximum_size 1000 x 600
+
 bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position center
 
 bindsym $mod+c exec google-chrome-stable
@@ -170,7 +174,7 @@ bindsym $mod+b exec google-chrome-stable https://www.bs.to/andere-serien
 bindsym $mod+a exec arandr
 bindsym $mod+p exec pavucontrol
 
-bindsym $mod+Shift+T exec atom
+bindsym $mod+Shift+T exec code
 
 bindsym $mod+Shift+W exec google-chrome-stable https://web.whatsapp.com
 bindsym $mod+Shift+M exec urxvt -name music -e cmus
@@ -186,6 +190,7 @@ bindsym $mod+Shift+S exec scrot '%d-%m-%Y_%T.png' -e 'mv $f ~/Images/Screenshots
 bindsym $mod+d exec xrandr --output LVDS1 --auto --primary --output HDMI3 --off
 bindsym $mod+Shift+D exec xrandr --output HDMI3 --auto --primary --output LVDS1 --off
 bindsym $mod+Shift+X exec ~/.config/i3/i3lock-multimonitor/lock & systemctl suspend
+bindsym $mod+Shift+Y exec ~/.config/i3/i3lock-multimonitor/lock
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -235,7 +240,7 @@ exec --no-startup-id urxvt -name calendar -e calcurse
 exec --no-startup-id spotify
 #exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
 exec --no-startup-id termite --name dropdown
-exec --no-startup-id atom
+exec --no-startup-id code
 
 exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
 
