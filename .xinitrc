@@ -51,6 +51,7 @@ fi
 exec i3 
 
 export PATH="${PATH}:~/.scripts"
+export PATH="${PATH}:~/.intellij-idea/bin"
 export PYTHONPATH="/usr/lib/python3.6/"
 
 wal -R

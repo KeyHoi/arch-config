@@ -1,5 +1,4 @@
-! URxvt.font: 		xft:"monospace":size=11
-urxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=14
+ URxvt.font: 		xft:"monospace":size=10
 ! urxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
 URxvt.letterSpace: 	0
 
@@ -9,7 +8,7 @@ URxvt*background:	black
 URxvt*foreground:	#7CFC00
 
 ! special
-*.foreground:   #d3c4b3
+*.foreground:   #FFFFFF
 *.background:   #13110e
 *.cursorColor:  #d3c4b3
 

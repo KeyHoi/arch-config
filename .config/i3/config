@@ -84,15 +84,15 @@ bindsym $mod+e layout toggle split
 # focus the parent container
 bindsym $mod+Shift+P focus parent
 
-set $workspace1 "1: "
-set $workspace2 "2: "
-set $workspace3 "3: "
+set $workspace1 "1: "
+set $workspace2 "2: "
+set $workspace3 "3: "
 set $workspace4 "4: "
-set $workspace5 "5: "
-set $workspace6 "6: "
-set $workspace7 "7: "
-set $workspace8 "8: "
-set $workspace9 "9: "
+set $workspace5 "5: "
+set $workspace6 "6: "
+set $workspace7 "7: "
+set $workspace8 "8: "
+set $workspace9 "9: "
 set $workspace10 "10: "
 
 #toggle transparency of focused window
@@ -123,21 +123,20 @@ bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
 # assign workspaces
-assign [class="sublime_text"] $workspace3 
-assign [class="Geany"] $workspace3 
-assign [class="Atom"] $workspace3 
-assign [class="jetbrains-pycharm"] $workspace3 
-assign [class="jetbrains-idea"] $workspace3 
-assign [class="libreoffice"] $workspace3 
-assign [class="Evince"] $workspace4 
-assign [class="feh"] $workspace4 
-assign [class="Vlc"] $workspace4 
-assign [class="Google-chrome"] $workspace5 
-assign [class="Spotify"] $workspace9
-assign [class="whats-app-nativefier-7bbd2c"] $workspace10
-assign [class="Thunderbird"] $workspace10
+assign [class="sublime_text"] $workspace1 
+assign [class="Code"] $workspace1 
+assign [class="code"] $workspace1 
+assign [class="Geany"] $workspace1 
+assign [class="Atom"] $workspace1 
+assign [class="jetbrains-pycharm"] $workspace1 
+assign [class="jetbrains-idea"] $workspace1 
+assign [class="libreoffice"] $workspace2 
+assign [class="Evince"] $workspace2 
+assign [class="feh"] $workspace2 
+assign [class="Vlc"] $workspace2 
+assign [class="Google-chrome"] $workspace2 
 
-for_window [class="Spotify"] move to workspace $workspace9
+for_window [class="Spotify"] move to workspace $workspace3
 
 for_window [class="Google-chrome"] move position center
 for_window [class="Arandr"] floating enable; move position center
@@ -147,10 +146,10 @@ for_window [class="mtp-ng-qt"] floating enable; move position center
 for_window [class="Galculator"] floating enable  move position center
 for_window [class="Summoners War Exporter"] floating enable; move position center
 
-for_window [instance="filemanager"] move workspace $workspace2
-for_window [instance="calendar"] move workspace $workspace8
-for_window [instance="music"] move workspace $workspace9
-for_window [instance="mail"] move workspace $workspace10
+for_window [instance="terminal"] move workspace $workspace7
+for_window [instance="filemanager"] move workspace $workspace8
+for_window [instance="calendar"] move workspace $workspace9
+for_window [instance="music"] move workspace $workspace2
 
 for_window [class="Main.py"] floating enable
 for_window [instance="dropdown"] floating enable
@@ -159,8 +158,8 @@ for_window [instance="dropdown"] move position center
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 1
 
-floating_minimum_size 1000 x 600
-floating_maximum_size 1000 x 600
+# floating_minimum_size 1000 x 600
+# floating_maximum_size 1000 x 600
 
 bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position center
 
@@ -210,16 +209,16 @@ focus_follows_mouse no
 # gaps
 # gaps inner 50
 
-workspace $workspace1 gaps inner 20
-workspace $workspace2 gaps inner 20
-workspace $workspace3 gaps inner 0
+workspace $workspace1 gaps inner 0
+workspace $workspace2 gaps inner 0
+workspace $workspace3 gaps inner 40
 workspace $workspace4 gaps inner 0
 workspace $workspace5 gaps inner 0
 workspace $workspace6 gaps inner 0
-workspace $workspace7 gaps inner 0
-workspace $workspace8 gaps inner 20
-workspace $workspace9 gaps inner 20
-workspace $workspace10 gaps inner 20
+workspace $workspace7 gaps inner 60
+workspace $workspace8 gaps inner 60
+workspace $workspace9 gaps inner 60
+workspace $workspace10 gaps inner 60
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -249,7 +248,7 @@ exec --no-startup-id xbacklight -set 100
 
 # restart i3
 exec_always --no-startup-id setxkbmap -layout de
-exec_always --no-startup-id wal -i ~/Images/Wallpaper/linux-penguin.png && feh --bg-scale ~/Images/Wallpaper/wallpaper_rick_and_morty_2.jpg
+exec_always --no-startup-id ~/.scripts/handle_themes.sh
 exec_always --no-startup-id pulseaudio --start
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id xrdb .Xresources 

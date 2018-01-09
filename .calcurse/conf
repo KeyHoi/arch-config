@@ -1,6 +1,6 @@
 appearance.calendarview=monthly
 appearance.compactpanels=no
-appearance.defaultpanel=appointments
+appearance.defaultpanel=calendar
 appearance.layout=1
 appearance.notifybar=yes
 appearance.sidebarwidth=1
@@ -23,3 +23,6 @@ general.systemdialogs=yes
 notification.command=printf '\a'
 notification.notifyall=all
 notification.warning=300
+
+appearance.headingpos=right-justified
+format.dayheading=%B %-d, %Y

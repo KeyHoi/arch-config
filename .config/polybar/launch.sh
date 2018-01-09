@@ -8,6 +8,7 @@ while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
 MONITOR=LVDS-1 polybar example &
+#MONITOR=VGA-1 polybar example &
 MONITOR=HDMI-3 polybar example &
 
 echo "Bars launched..."

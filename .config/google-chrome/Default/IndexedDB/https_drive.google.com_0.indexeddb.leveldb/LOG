@@ -1,0 +1,21 @@
+2018/01/09-10:26:36.862 11542 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/01/09-10:26:36.863 11542 Recovering log #1218
+2018/01/09-10:26:36.871 11542 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/001218.log 
+2018/01/09-10:26:39.526 12090 Level-0 table #1222: started
+2018/01/09-10:26:42.873 12090 Level-0 table #1222: 1111189 bytes OK
+2018/01/09-10:26:43.805 12090 Delete type=0 #1218
+2018/01/09-10:26:44.849 12090 Level-0 table #1224: started
+2018/01/09-10:26:45.044 12090 Level-0 table #1224: 1129251 bytes OK
+2018/01/09-10:26:45.242 12090 Delete type=0 #1221
+2018/01/09-10:26:45.246 12090 Compacting 4@0 + 1@1 files
+2018/01/09-10:26:45.441 12090 Generated table #1225@0: 15 keys, 1129618 bytes
+2018/01/09-10:26:45.441 12090 Compacted 4@0 + 1@1 files => 1129618 bytes
+2018/01/09-10:26:45.598 12090 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/01/09-10:26:45.599 12090 Delete type=2 #1219
+2018/01/09-10:26:45.599 12090 Delete type=2 #1224
+2018/01/09-10:26:45.599 12090 Delete type=2 #1215
+2018/01/09-10:26:45.641 12090 Delete type=2 #1217
+2018/01/09-10:26:45.641 12090 Delete type=2 #1222
+2018/01/09-10:26:45.941 12090 Level-0 table #1227: started
+2018/01/09-10:26:46.138 12090 Level-0 table #1227: 1129649 bytes OK
+2018/01/09-10:26:46.304 12090 Delete type=0 #1223

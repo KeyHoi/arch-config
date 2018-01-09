@@ -1,3 +1,10 @@
+add Music
+add Music/2
+delete all
+remove all
+remove
+add Music/not_moved/
+add 
 add Music/
 add ~/Music/
 set color_win_title_fg=208

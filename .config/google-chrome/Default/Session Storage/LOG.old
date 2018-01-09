@@ -1,0 +1,24 @@
+2018/01/08-09:38:22.893 2048 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2018/01/08-09:38:22.894 2048 Recovering log #601
+2018/01/08-09:38:23.531 2048 Reusing old log /home/keyhoi/.config/google-chrome/Default/Session Storage/000601.log 
+2018/01/08-10:09:55.650 2447 Level-0 table #606: started
+2018/01/08-10:09:55.695 2447 Level-0 table #606: 18643 bytes OK
+2018/01/08-10:09:55.737 2447 Delete type=0 #601
+2018/01/08-11:43:32.268 2447 Level-0 table #608: started
+2018/01/08-11:43:32.316 2447 Level-0 table #608: 24228 bytes OK
+2018/01/08-11:43:32.366 2447 Delete type=0 #605
+2018/01/08-17:46:06.625 2447 Compacting 1@0 + 1@1 files
+2018/01/08-17:46:06.771 2447 Generated table #609@0: 615 keys, 28463 bytes
+2018/01/08-17:46:06.771 2447 Compacted 1@0 + 1@1 files => 28463 bytes
+2018/01/08-17:46:06.854 2447 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/01/08-17:46:06.854 2447 Delete type=2 #606
+2018/01/08-17:46:06.854 2447 Delete type=2 #608
+2018/01/08-20:38:14.672 2447 Compacting 1@1 + 1@2 files
+2018/01/08-20:38:14.776 2447 Generated table #610@1: 98 keys, 13342 bytes
+2018/01/08-20:38:14.776 2447 Compacted 1@1 + 1@2 files => 13342 bytes
+2018/01/08-20:38:14.843 2447 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/01/08-20:38:14.843 2447 Delete type=2 #609
+2018/01/08-20:38:14.843 2447 Delete type=2 #603
+2018/01/08-23:20:50.387 2447 Level-0 table #612: started
+2018/01/08-23:20:50.468 2447 Level-0 table #612: 21473 bytes OK
+2018/01/08-23:20:50.870 2447 Delete type=0 #607

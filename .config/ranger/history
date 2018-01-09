@@ -1,8 +1,6 @@
 open_with 
 chmod +x %f
-
 shell sudo chmod +x test.sh
-delete
 shell cd ~/Images
 cd Images
 search chris
@@ -12,3 +10,6 @@ search SIDO
 search Zara
 search Linkin Park
 mkdir Wallpaper
+cd /srv/http/
+delete
+

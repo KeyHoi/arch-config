@@ -1,0 +1,37 @@
+2018/01/05-13:33:28.887 14493 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_webreader.mytolino.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/01/05-13:33:28.936 14493 Recovering log #32
+2018/01/05-13:33:28.936 14493 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_webreader.mytolino.com_0.indexeddb.leveldb/000032.log 
+2018/01/05-13:33:35.121 14265 Current memtable full; waiting...
+2018/01/05-13:33:35.154 2307 Level-0 table #37: started
+2018/01/05-13:33:35.464 2307 Level-0 table #37: 1607 bytes OK
+2018/01/05-13:33:35.716 2307 Delete type=0 #32
+2018/01/05-13:33:35.716 2307 Level-0 table #39: started
+2018/01/05-13:33:35.716 2307 Level-0 table #39: 0 bytes OK
+2018/01/05-13:33:35.863 2307 Delete type=0 #36
+2018/01/05-13:33:35.863 2307 Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0b\x00\x00\x05' @ 149 : 1
+2018/01/05-13:33:35.863 2307 Compacting 1@0 + 2@1 files
+2018/01/05-13:33:36.103 2307 Generated table #40@0: 59 keys, 6629295 bytes
+2018/01/05-13:33:36.296 2307 Generated table #41@0: 3 keys, 254 bytes
+2018/01/05-13:33:36.296 2307 Compacted 1@0 + 2@1 files => 6629549 bytes
+2018/01/05-13:33:36.719 2307 compacted to: files[ 0 2 1 0 0 0 0 ]
+2018/01/05-13:33:36.719 2307 Delete type=2 #37
+2018/01/05-13:33:36.720 2307 Delete type=2 #29
+2018/01/05-13:33:36.720 2307 Delete type=2 #34
+2018/01/05-13:33:36.830 2307 Manual compaction at level-0 from '\x00\x0b\x00\x00\x05' @ 149 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/01/05-13:36:14.542 15039 Current memtable full; waiting...
+2018/01/05-13:36:14.542 2307 Level-0 table #43: started
+2018/01/05-13:36:14.575 2307 Level-0 table #43: 10946 bytes OK
+2018/01/05-13:36:14.617 2307 Delete type=0 #38
+2018/01/05-13:36:14.617 2307 Level-0 table #45: started
+2018/01/05-13:36:14.617 2307 Level-0 table #45: 0 bytes OK
+2018/01/05-13:36:14.659 2307 Delete type=0 #42
+2018/01/05-13:36:14.659 2307 Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\x05' @ 212 : 0
+2018/01/05-13:36:14.659 2307 Compacting 1@0 + 2@1 files
+2018/01/05-13:36:14.841 2307 Generated table #46@0: 58 keys, 6629487 bytes
+2018/01/05-13:36:14.932 2307 Generated table #47@0: 1 keys, 266 bytes
+2018/01/05-13:36:14.932 2307 Compacted 1@0 + 2@1 files => 6629753 bytes
+2018/01/05-13:36:14.966 2307 compacted to: files[ 0 2 1 0 0 0 0 ]
+2018/01/05-13:36:14.966 2307 Delete type=2 #40
+2018/01/05-13:36:14.967 2307 Delete type=2 #43
+2018/01/05-13:36:14.968 2307 Delete type=2 #41
+2018/01/05-13:36:14.968 2307 Manual compaction at level-0 from '\x00\x0a\x00\x00\x05' @ 212 : 0 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)

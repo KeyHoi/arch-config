@@ -1,24 +1,10 @@
 #
-# Calcurse-Tastenkonfiguration
+# Calcurse keys configuration file
 #
-# Diese Datei definiert die Tastenkürzel für Calcurse.
-# Mit "#" beginnende Zeilen sind Kommentare und werden ignoriert.
-# Um eine Taste einer Aktion zuzuweisen, muss folgende Syntax
-# verwendet werden:
-#
-#        AKTION  TASTE1  TASTE2  ...  TASTEn
-#
-# Wobei AKTION ausgeführt wird, wenn TASTE1, TASTE2, ... oder TASTEn
-# gedrückt wird.
-#
-# Um die STRG-Taste zu verwenden, kann der Taste 'C-' vorangestellt werden.
-# Die Escape-, Leer- und Tab-Tasten können durch die Schlüsselwörter
-# 'ESC', 'SPC' und 'TAB' verwendet werden.
-# Pfeiltasten entsprechend mit UP, DWN, LFT, RGT.
-# 'KEY_HOME' und 'KEY_END' entsprechen den Pos1- und Ende-Tasten.
-#
-# Eine Beschreibung jedes AKTION-Schlüsselwortes findet man im
-# Online-Konfigurationsmenü von calcurse.
+# In this file the keybindings used by Calcurse are defined.
+# It is generated automatically by Calcurse and is maintained
+# via the key configuration menu of the interactive user
+# interface. It should not be edited directly.
 
 generic-cancel  ESC 
 generic-select  SPC 
@@ -41,7 +27,7 @@ generic-add-todo  ^T
 generic-prev-day  T ^H 
 generic-next-day  t ^L 
 generic-prev-week  W ^K 
-generic-next-week  w ^J 
+generic-next-week  w RET 
 generic-prev-month  M 
 generic-next-month  m 
 generic-prev-year  Y 

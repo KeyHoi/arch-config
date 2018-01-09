@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tolino IconFont</title>
+	<style type="text/css" media="screen">
+	
+		@font-face {
+			font-family: tolino-iconfont;
+			src:
+				url('tolino-iconfont.ttf') format('truetype'),
+				url('tolino-iconfont.woff') format('woff');
+				/* url('tolino-iconfont.otf') format('opentype'); */
+		}
+		html, body {
+			font-family: Helvetica, Arial, sans-serif;
+			color: #333;
+			margin: 20px;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		h1, h2 {
+			font-size: 250%;
+			text-align: center;
+			text-transform: uppercase;
+			color: #666;
+		}
+		
+		table {
+			width: 100%;
+			border-spacing: 0px;
+			border-collapse: separate;
+			font-size: 90%;
+		}
+		tr {
+			line-height: 2.5em;
+		}
+		tr:nth-child(odd) {
+			background-color: #fff;
+		}
+		tr:nth-child(even) {
+			background-color: #eee;
+		}
+		td {
+			padding: 0 2px;
+		}
+		tr > th {
+			text-transform: uppercase;
+			font-size: 90%;
+			color: #fff;
+			background-color: #666;
+		}
+		tr > th:nth-child(2) {
+			text-align: right;
+		}
+		tr > th:nth-child(5), tr > th:nth-child(6) {
+			text-align: left;
+		}
+
+		tr > td:nth-child(1) {
+			padding-left: 5px;
+		}
+		tr > td:nth-child(2) {
+			text-align: right;
+			padding-right: 10px;
+			color: #aaa;
+		}
+		tr > td:nth-child(3) {
+			text-align: center;
+			font-family: tolino-iconfont;
+			font-size: 140%;
+			color: #33d;
+			width: 100px;
+			/* 	line-height: 1.5; */
+ 			vertical-align: top;
+		}
+		tr > td:nth-child(4) {
+			text-align: center;
+			font-size: 130%;
+		}
+		tr > td:nth-child(5) {
+			font-size: 90%;
+		}
+		tr > td:nth-child(6) {
+		}
+		tr > td:nth-child(7) {
+			text-align: center;
+		}
+		
+		.unassigned {
+			color: #ccc;
+		}
+		
+		hr {
+			border: 0;
+			height: 1px;
+			background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+			background-image:         linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+		}
+	</style>
+</head>
+
+<body>
+<h2>Tolino Iconfont</h2>
+
+<table>
+	<tr><th>Unicode</th><th>Dez.</th><th>Icon</th><th>Unicode-Zeichen</th><th>Unicode-Bezeichner</th><th>Icon-Beschreibung</th><th>Alt</th></tr>
+<tr><td>U+0021</td><td>33</td><td>!</td><td>!</td><td>EXCLAMATION MARK</td><td>Ausrufezeichen, Hinweis</td><td></td></tr>
+<tr><td>U+0022</td><td>34</td><td>"</td><td>"</td><td>QUOTATION MARK</td><td>Pause (Audio)</td><td>±</td></tr>
+<tr><td>U+0023</td><td>35</td><td>#</td><td>#</td><td>NUMBER SIGN</td><td>Synchronisierung, Reload</td><td></td></tr>
+<tr><td>U+0024</td><td>36</td><td>$</td><td>$</td><td>DOLLAR SIGN</td><td>Sortieren A-Z</td><td></td></tr>
+<tr><td>U+0025</td><td>37</td><td>%</td><td>%</td><td>PERCENT SIGN</td><td>Synchronisierung nicht möglich/fehlgeschlagen</td><td>1</td></tr>
+<tr class="unassigned"><td>U+0026</td><td>38</td><td>&</td><td>&</td><td>AMPERSAND</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+0027</td><td>39</td><td>'</td><td>'</td><td>APOSTROPHE</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+0028</td><td>40</td><td>(</td><td>(</td><td>LEFT PARENTHESIS</td><td></td><td></td></tr>
+<tr><td>U+0029</td><td>41</td><td>)</td><td>)</td><td>RIGHT PARENTHESIS</td><td>Löschen, Abfalleimer</td><td></td></tr>
+<tr><td>U+002A</td><td>42</td><td>*</td><td>*</td><td>ASTERISK</td><td>Wiedergabe (Video)</td><td></td></tr>
+<tr><td>U+002B</td><td>43</td><td>+</td><td>+</td><td>PLUS SIGN</td><td>Neu, Hinzufügen</td><td>g</td></tr>
+<tr class="unassigned"><td>U+002C</td><td>44</td><td>,</td><td>,</td><td>COMMA</td><td></td><td></td></tr>
+<tr><td>U+002D</td><td>45</td><td>-</td><td>-</td><td>HYPHEN-MINUS</td><td>Textmarkierung (Textmarker Halb)</td><td></td></tr>
+<tr><td>U+002E</td><td>46</td><td>.</td><td>.</td><td>FULL STOP</td><td>Einstellungen</td><td></td></tr>
+<tr><td>U+002F</td><td>47</td><td>/</td><td>/</td><td>SLASH</td><td>Häkchen, Bestätigung</td><td>u</td></tr>
+<tr><td>U+0030</td><td>48</td><td>0</td><td>0</td><td>DIGIT ZERO</td><td>Zeilenabstand Medium ???</td><td>P</td></tr>
+<tr><td>U+0031</td><td>49</td><td>1</td><td>1</td><td>DIGIT ONE</td><td>Single-Page, Einzelseite</td><td></td></tr>
+<tr><td>U+0032</td><td>50</td><td>2</td><td>2</td><td>DIGIT TWO</td><td>Double-Page, Doppelseite</td><td></td></tr>
+<tr><td>U+0033</td><td>51</td><td>3</td><td>3</td><td>DIGIT THREE</td><td>Seitenrand Max.</td><td></td></tr>
+<tr><td>U+0034</td><td>52</td><td>4</td><td>4</td><td>DIGIT FOUR</td><td>Seitenrand Medium</td><td></td></tr>
+<tr><td>U+0035</td><td>53</td><td>5</td><td>5</td><td>DIGIT FIVE</td><td>Seitenrand Min. / Zeilenabstand Min. / Blocksatz</td><td></td></tr>
+<tr><td>U+0036</td><td>54</td><td>6</td><td>6</td><td>DIGIT SIX</td><td>Zeilenabstand Medium</td><td>- (hyphen)</td></tr>
+<tr><td>U+0037</td><td>55</td><td>7</td><td>7</td><td>DIGIT SEVEN</td><td>Zeilenabstand Max.</td><td>a</td></tr>
+<tr><td>U+0038</td><td>56</td><td>8</td><td>8</td><td>DIGIT EIGHT</td><td>Textausrichtung Zentriert</td><td>(</td></tr>
+<tr><td>U+0039</td><td>57</td><td>9</td><td>9</td><td>DIGIT NINE</td><td>Textausrichtung Linksbündig</td><td>'</td></tr>
+<tr class="unassigned"><td>U+003A</td><td>58</td><td>:</td><td>:</td><td>COLON</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+003B</td><td>59</td><td>;</td><td>;</td><td>SEMICOLON</td><td></td><td></td></tr>
+<tr><td>U+003C</td><td>60</td><td><</td><td><</td><td>LESS</td><td>Zurück, Vorherige Seite</td><td>j</td></tr>
+<tr class="unassigned"><td>U+003D</td><td>61</td><td>=</td><td>=</td><td>EQUAL</td><td></td><td></td></tr>
+<tr><td>U+003E</td><td>62</td><td>></td><td>></td><td>GREATER</td><td>Weiter, Nächste Seite</td><td>l (small L)</td></tr>
+<tr><td>U+003F</td><td>63</td><td>?</td><td>?</td><td>QUESTION MARK</td><td>Frage, Hilfe</td><td>Y</td></tr>
+<tr><td>U+0040</td><td>64</td><td>@</td><td>@</td><td>AT</td><td>Beleuchtung Aus</td><td></td></tr>
+<tr><td>U+0041</td><td>65</td><td>A</td><td>A</td><td>LATIN CAPITAL LETTER A</td><td>Schriftart, Schriftgröße</td><td>3</td></tr>
+<tr><td>U+0042</td><td>66</td><td>B</td><td>B</td><td>LATIN CAPITAL LETTER B</td><td>Bookmark</td><td>o</td></tr>
+<tr><td>U+0043</td><td>67</td><td>C</td><td>C</td><td>LATIN CAPITAL LETTER C</td><td>Cloud</td><td>w</td></tr>
+<tr><td>U+0044</td><td>68</td><td>D</td><td>D</td><td>LATIN CAPITAL LETTER D</td><td>Cloud Download (Invertiert)</td><td></td></tr>
+<tr><td>U+0045</td><td>69</td><td>E</td><td>E</td><td>LATIN CAPITAL LETTER E</td><td>E-Ink/Mobiles Gerät</td><td></td></tr>
+<tr class="unassigned"><td>U+0046</td><td>70</td><td>F</td><td>F</td><td>LATIN CAPITAL LETTER F</td><td></td><td></td></tr>
+<tr><td>U+0047</td><td>71</td><td>G</td><td>G</td><td>LATIN CAPITAL LETTER G</td><td>Collection, Sammlung</td><td>D</td></tr>
+<tr><td>U+0048</td><td>72</td><td>H</td><td>H</td><td>LATIN CAPITAL LETTER H</td><td>Headphone, Audio-Titel/-Bibliothek</td><td>Q</td></tr>
+<tr><td>U+0049</td><td>73</td><td>I</td><td>I</td><td>LATIN CAPITAL LETTER I</td><td>Information (Invertiert)</td><td>N</td></tr>
+<tr class="unassigned"><td>U+004A</td><td>74</td><td>J</td><td>J</td><td>LATIN CAPITAL LETTER J</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+004B</td><td>75</td><td>K</td><td>K</td><td>LATIN CAPITAL LETTER K</td><td></td><td></td></tr>
+<tr><td>U+004C</td><td>76</td><td>L</td><td>L</td><td>LATIN CAPITAL LETTER L</td><td>Gesperrt</td><td>=</td></tr>
+<tr class="unassigned"><td>U+004D</td><td>77</td><td>M</td><td>M</td><td>LATIN CAPITAL LETTER M</td><td></td><td></td></tr>
+<tr><td>U+004E</td><td>78</td><td>N</td><td>N</td><td>LATIN CAPITAL LETTER N</td><td>Notiz</td><td>F</td></tr>
+<tr><td>U+004F</td><td>79</td><td>O</td><td>O</td><td>LATIN CAPITAL LETTER O</td><td>Table of Contents, Inhaltsverzeichnis</td><td></td></tr>
+<tr><td>U+0050</td><td>80</td><td>P</td><td>P</td><td>LATIN CAPITAL LETTER P</td><td>Cloud Paused (Invertiert auf Kreis)</td><td></td></tr>
+<tr><td>U+0051</td><td>81</td><td>Q</td><td>Q</td><td>LATIN CAPITAL LETTER Q</td><td>Cloud Download (Invertiert auf Kreis)</td><td></td></tr>
+<tr><td>U+0052</td><td>82</td><td>R</td><td>R</td><td>LATIN CAPITAL LETTER R</td><td>Reader, Bibliothek</td><td>Z</td></tr>
+<tr class="unassigned"><td>U+0053</td><td>83</td><td>S</td><td>S</td><td>LATIN CAPITAL LETTER S</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+0054</td><td>84</td><td>T</td><td>T</td><td>LATIN CAPITAL LETTER T</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+0055</td><td>85</td><td>U</td><td>U</td><td>LATIN CAPITAL LETTER U</td><td></td><td></td></tr>
+<tr><td>U+0056</td><td>86</td><td>V</td><td>V</td><td>LATIN CAPITAL LETTER V</td><td>Share, Community, Teilen</td><td>7</td></tr>
+<tr><td>U+0057</td><td>87</td><td>W</td><td>W</td><td>LATIN CAPITAL LETTER W</td><td>Web, Internet</td><td></td></tr>
+<tr><td>U+0058</td><td>88</td><td>X</td><td>X</td><td>LATIN CAPITAL LETTER X</td><td>Schließen (Groß)</td><td>v</td></tr>
+<tr><td>U+0059</td><td>89</td><td>Y</td><td>Y</td><td>LATIN CAPITAL LETTER Y</td><td>Fit to width, Anpassen an Breite</td><td></td></tr>
+<tr><td>U+005A</td><td>90</td><td>Z</td><td>Z</td><td>LATIN CAPITAL LETTER Z</td><td>Zoom In, Vergrößern</td><td>L (K)</td></tr>
+<tr><td>U+005B</td><td>91</td><td>[</td><td>[</td><td>LEFT SQUARE BRACKET</td><td>Textmarkierung Anfang</td><td>S</td></tr>
+<tr><td>U+005C</td><td>92</td><td>\</td><td>\</td><td>BACKSLASH</td><td>Häkchen, Bestätigung (Invertiert)</td><td>A</td></tr>
+<tr><td>U+005D</td><td>93</td><td>]</td><td>]</td><td>RIGHT SQUARE BRACKET</td><td>Textmarkierung Ende</td><td>T</td></tr>
+<tr class="unassigned"><td>U+005E</td><td>94</td><td>^</td><td>^</td><td>CIRCUMFLEX ACCENT</td><td></td><td></td></tr>
+<tr><td>U+005F</td><td>95</td><td>_</td><td>_</td><td>LOW LINE (UNDERSCORE)</td><td>Textmarkierung (Textmarker Halb)</td><td></td></tr>
+<tr class="unassigned"><td>U+0060</td><td>96</td><td>`</td><td>`</td><td>GRAVE ACCENT</td><td></td><td></td></tr>
+<tr><td>U+0061</td><td>97</td><td>a</td><td>a</td><td>LATIN SMALL LETTER A</td><td>Schriftart, Schriftgröße</td><td>b</td></tr>
+<tr><td>U+0062</td><td>98</td><td>b</td><td>b</td><td>LATIN SMALL LETTER B</td><td>Bookmark (Kontur)</td><td>n</td></tr>
+<tr><td>U+0063</td><td>99</td><td>c</td><td>c</td><td>LATIN SMALL LETTER C</td><td>Cloud (Kontur)</td><td>y</td></tr>
+<tr><td>U+0064</td><td>100</td><td>d</td><td>d</td><td>LATIN SMALL LETTER D</td><td>Cloud Download</td><td>x</td></tr>
+<tr><td>U+0065</td><td>101</td><td>e</td><td>e</td><td>LATIN SMALL LETTER E</td><td>Edit, Bearbeiten</td><td>H</td></tr>
+<tr class="unassigned"><td>U+0066</td><td>102</td><td>f</td><td>f</td><td>LATIN SMALL LETTER F</td><td></td><td></td></tr>
+<tr><td>U+0067</td><td>103</td><td>g</td><td>g</td><td>LATIN SMALL LETTER G</td><td>Grid-View, Kachelansicht</td><td>E</td></tr>
+<tr><td>U+0068</td><td>104</td><td>h</td><td>h</td><td>LATIN SMALL LETTER H</td><td>Home</td><td>:</td></tr>
+<tr><td>U+0069</td><td>105</td><td>i</td><td>i</td><td>LATIN SMALL LETTER I</td><td>Information</td><td>M</td></tr>
+<tr><td>U+006A</td><td>106</td><td>j</td><td>j</td><td>LATIN SMALL LETTER J</td><td>Shop, Einkaufstasche</td><td>4</td></tr>
+<tr class="unassigned"><td>U+006B</td><td>107</td><td>k</td><td>k</td><td>LATIN SMALL LETTER K</td><td></td><td></td></tr>
+<tr><td>U+006C</td><td>108</td><td>l</td><td>l</td><td>LATIN SMALL LETTER L</td><td>List-View, Listenansicht</td><td>R</td></tr>
+<tr><td>U+006D</td><td>109</td><td>m</td><td>m</td><td>LATIN SMALL LETTER M</td><td>Menü</td><td>U</td></tr>
+<tr><td>U+006E</td><td>110</td><td>n</td><td>n</td><td>LATIN SMALL LETTER N</td><td>Nachtmodus</td><td></td></tr>
+<tr><td>U+006F</td><td>111</td><td>o</td><td>o</td><td>LATIN SMALL LETTER O</td><td>Inhaltsverzeichnis m. Lesezeichen</td><td>p</td></tr>
+<tr class="unassigned"><td>U+0070</td><td>112</td><td>p</td><td>p</td><td>LATIN SMALL LETTER P</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+0071</td><td>113</td><td>q</td><td>q</td><td>LATIN SMALL LETTER Q</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+0072</td><td>114</td><td>r</td><td>r</td><td>LATIN SMALL LETTER R</td><td></td><td></td></tr>
+<tr><td>U+0073</td><td>115</td><td>s</td><td>s</td><td>LATIN SMALL LETTER S</td><td>Suche</td><td>5</td></tr>
+<tr><td>U+0074</td><td>116</td><td>t</td><td>t</td><td>LATIN SMALL LETTER T</td><td>Textsuche</td><td>6</td></tr>
+<tr><td>U+0075</td><td>117</td><td>u</td><td>u</td><td>LATIN SMALL LETTER U</td><td>Cloud Upload</td><td>z</td></tr>
+<tr><td>U+0076</td><td>118</td><td>v</td><td>v</td><td>LATIN SMALL LETTER V</td><td>View, Ansicht</td><td>I (capital i)</td></tr>
+<tr class="unassigned"><td>U+0077</td><td>119</td><td>w</td><td>w</td><td>LATIN SMALL LETTER W</td><td></td><td></td></tr>
+<tr><td>U+0078</td><td>120</td><td>x</td><td>x</td><td>LATIN SMALL LETTER X</td><td>Schließen (Klein)</td><td></td></tr>
+<tr class="unassigned"><td>U+0079</td><td>121</td><td>y</td><td>y</td><td>LATIN SMALL LETTER Y</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+007A</td><td>122</td><td>z</td><td>z</td><td>LATIN SMALL LETTER Z</td><td></td><td></td></tr>
+<tr><td>U+007B</td><td>123</td><td>{</td><td>{</td><td>LEFT CURLY BRACKET</td><td>Single-Page, Einzelseite</td><td></td></tr>
+<tr><td>U+007C</td><td>124</td><td>|</td><td>|</td><td>VERTICAL BAR</td><td>Wiedergabe (Audio)</td><td></td></tr>
+<tr><td>U+007D</td><td>125</td><td>}</td><td>}</td><td>RIGHT CURLY BRACKET</td><td>Double-Page, Doppelseite</td><td></td></tr>
+<tr><td>U+007E</td><td>126</td><td>~</td><td>~</td><td>TILDE</td><td>Shuffle-Play, Zufallswiedergabe (Audio)</td><td></td></tr>
+<tr><td>U+00A1</td><td>161</td><td>¡</td><td>¡</td><td>INVERTED EXCLAMATION MARK</td><td>Ausrufezeichen (Invertiert)</td><td></td></tr>
+
+<tr><td>U+00AB</td><td>171</td><td>«</td><td>«</td><td>LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</td><td>Rewind (Audio)</td><td></td></tr>
+<tr><td>U+00BB</td><td>187</td><td>»</td><td>»</td><td>RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</td><td>Fast-Forward (Audio)</td><td></td></tr>
+<tr><td>U+00BF</td><td>191</td><td>¿</td><td>¿</td><td>INVERTED QUESTION MARK</td><td>Frage, Hilfe (Invertiert)</td><td></td></tr>
+<tr class="unassigned"><td>U+00C4</td><td>196</td><td>Ä</td><td>Ä</td><td>LATIN CAPITAL LETTER A WITH DIAERESIS</td><td></td><td></td></tr>
+<tr><td>U+00DC</td><td>220</td><td>Ü</td><td>Ü</td><td>LATIN CAPITAL LETTER U WITH DIAERESIS</td><td>User-Account, Nutzer-Konto</td><td>X</td></tr>
+<tr><td>U+0174</td><td>372</td><td>Ŵ</td><td>Ŵ</td><td>LATIN CAPITAL LETTER W WITH CIRCUMFLEX</td><td>WLAN Signalstärke Medium</td><td></td></tr>
+<tr><td>U+0298</td><td>664</td><td></td><td>ʘ</td><td>LATIN LETTER BILABIAL CLICK</td><td>Select-Box, Ausgewählt</td><td></td></tr>
+<tr><td>U+02C2</td><td>706</td><td>˂</td><td>˂</td><td>MODIFIER LETTER LEFT ARROWHEAD</td><td>Pfeil Links</td><td></td></tr>
+<tr><td>U+02C3</td><td>707</td><td>˃</td><td>˃</td><td>MODIFIER LETTER RIGHT ARROWHEAD</td><td>Pfeil Rechts</td><td></td></tr>
+<tr class="unassigned"><td>U+02C4</td><td>708</td><td>˄</td><td>˄</td><td>MODIFIER LETTER UP ARROWHEAD</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+02C5</td><td>709</td><td>˅</td><td>˅</td><td>MODIFIER LETTER DOWN ARROWHEAD</td><td></td><td></td></tr>
+<tr><td>U+0394</td><td>916</td><td>Δ</td><td>Δ</td><td>GREEK CAPITAL LETTER DELTA</td><td>Text "Dosis" im Zeichensatz</td><td></td></tr>
+<tr><td>U+03B4</td><td>948</td><td>δ</td><td>δ</td><td>GREEK SMALL LETTER DELTA</td><td>Text "DroidSerif" im Zeichensatz</td><td></td></tr>
+<tr><td>U+03BB</td><td>955</td><td>λ</td><td>λ</td><td>GREEK SMALL LETTER LAMBDA</td><td>Text "Linux Libertine" im Zeichensatz</td><td></td></tr>
+<tr><td>U+03C1</td><td>961</td><td>ρ</td><td>ρ</td><td>GREEK SMALL LETTER RHO</td><td>Text "Rokkitt" im Zeichensatz</td><td></td></tr>
+<tr><td>U+1E80</td><td>7808</td><td>Ẁ</td><td>Ẁ</td><td>LATIN CAPITAL LETTER W WITH GRAVE</td><td>WLAN Signalstärke Max</td><td></td></tr>
+<tr><td>U+1E82</td><td>7810</td><td>Ẃ</td><td>Ẃ</td><td>LATIN CAPITAL LETTER W WITH ACUTE</td><td>WLAN Signalstärke Min</td><td></td></tr>
+<tr><td>U+1E84</td><td>7812</td><td>Ẅ</td><td>Ẅ</td><td>LATIN CAPITAL LETTER W WITH DIAERESIS</td><td>WLAN Signalstärke Max</td><td></td></tr>
+<tr><td>U+2026</td><td>8230</td><td>…</td><td>…</td><td>HORIZONTAL ELLIPSIS</td><td>Weitere Einträge (Horizontal)</td><td></td></tr>
+<tr><td>U+205E</td><td>8286</td><td>⁞</td><td>⁞</td><td>VERTICAL FOUR DOTS</td><td>Weitere Einträge (Vertikal)</td><td></td></tr>
+<tr><td>U+2190</td><td>8592</td><td>←</td><td>←</td><td>LEFTWARDS ARROW</td><td>Zurück</td><td>m</td></tr>
+<tr><td>U+2192</td><td>8594</td><td>→</td><td>→</td><td>RIGHTWARDS ARROW</td><td>Abmelden</td><td></td></tr>
+<tr><td>U+2193</td><td>8595</td><td>↓</td><td>↓</td><td>DOWNWARDS ARROW</td><td>???</td><td>;</td></tr>
+<tr><td>U+2194</td><td>8596</td><td>↔︎</td><td>↔︎</td><td>LEFT RIGHT ARROW</td><td>???</td><td>V</td></tr>
+<tr><td>U+2195</td><td>8597</td><td>↕︎</td><td>↕︎</td><td>UP DOWN ARROW</td><td>???</td><td>2</td></tr>
+<tr><td>U+21A8</td><td>8616</td><td>↨</td><td>↨</td><td>UP DOWN ARROW WITH BASE</td><td>???</td><td>J</td></tr>
+<tr><td>U+21BA</td><td>8634</td><td>↺</td><td>↺</td><td>ANTICLOCKWISE OPEN CIRCLE ARROW</td><td>Rückgängig</td><td>9</td></tr>
+<tr><td>U+21BB</td><td>8635</td><td>↻</td><td>↻</td><td>CLOCKWISE OPEN CIRCLE ARROW</td><td>Rückgängig/Rotation nicht möglich</td><td>0</td></tr>
+<tr><td>U+21E4</td><td>8676</td><td>⇤</td><td>⇤</td><td>LEFTWARDS ARROW TO BAR</td><td>Titel zurück</td><td>{</td></tr>
+<tr><td>U+21E5</td><td>8677</td><td>⇥</td><td>⇥</td><td>RIGHTWARDS ARROW TO BAR</td><td>Titel vorwärts</td><td>}</td></tr>
+<tr><td>U+221E</td><td>8734</td><td>∞</td><td>∞</td><td>INFINITY</td><td>Auto-Wiederholung (Audio)</td><td></td></tr>
+<tr><td>U+2295</td><td>8853</td><td>⊕</td><td>⊕</td><td>CIRCLED PLUS</td><td>Zur Sammlung hinzufügen</td><td>h</td></tr>
+<tr><td>U+2297</td><td>8855</td><td>⊗</td><td>⊗</td><td>CIRCLED TIMES</td><td>Schließen, Löschen (Invertiert)</td><td>C</td></tr>
+<tr class="unassigned"><td>U+24BB</td><td>9403</td><td>Ⓕ</td><td>Ⓕ</td><td>CIRCLED LATIN CAPITAL LETTER F</td><td></td><td></td></tr>
+<tr><td>U+24BE</td><td>9406</td><td>Ⓘ</td><td>Ⓘ</td><td>CIRCLED LATIN CAPITAL LETTER I</td><td>Ausschalten</td><td></td></tr>
+<tr class="unassigned"><td>U+24C9</td><td>9417</td><td>Ⓣ</td><td>Ⓣ</td><td>CIRCLED LATIN CAPITAL LETTER T</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+24CE</td><td>9422</td><td>Ⓨ</td><td>Ⓨ</td><td>CIRCLED LATIN CAPITAL LETTER Y</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+24D5</td><td>9429</td><td>ⓕ</td><td>ⓕ</td><td>CIRCLED LATIN SMALL LETTER F</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+24E3</td><td>9443</td><td>ⓣ</td><td>ⓣ</td><td>CIRCLED LATIN SMALL LETTER T</td><td></td><td></td></tr>
+<tr class="unassigned"><td>U+24E8</td><td>9448</td><td>ⓨ</td><td>ⓨ</td><td>CIRCLED LATIN SMALL LETTER Y</td><td></td><td></td></tr>
+<tr><td>U+2580</td><td>9600</td><td>▀</td><td>▀</td><td>UPPER HALF BLOCK</td><td>Wechsel Single-Page Modus</td><td></td></tr>
+<tr><td>U+2584</td><td>9604</td><td>▄</td><td>▄</td><td>LOWER HALF BLOCK</td><td>Wechsel Double-Page Modus</td><td></td></tr>
+<tr><td>U+25AA</td><td>9642</td><td>▪︎</td><td>▪︎</td><td>BLACK SMALL SQUARE</td><td>Check-Box, Ausgewählt (Invertiert)</td><td></td></tr>
+<tr><td>U+25AB</td><td>9643</td><td>▫︎</td><td>▫︎</td><td>WHITE SMALL SQUARE</td><td>Check-Box, Nicht Ausgewählt</td><td></td></tr>
+<tr><td>U+25AE</td><td>9646</td><td>▮</td><td>▮</td><td>BLACK VERTICAL RECTANGLE</td><td>Bookmark Indikator</td><td></td></tr>
+<tr><td>U+25AF</td><td>9647</td><td>▯</td><td>▯</td><td>WHITE VERTICAL RECTANGLE</td><td>Bookmark Indikator (Kontur)</td><td></td></tr>
+<tr><td>U+25B2</td><td>9650</td><td>▲</td><td>▲</td><td>BLACK UP-POINTING TRIANGLE</td><td>Dreieck Oben</td><td>[</td></tr>
+<tr><td>U+25B3</td><td>9651</td><td>△</td><td>△</td><td>WHITE UP-POINTING TRIANGLE</td><td>Mobiles Gerät, Portrait (Rotation 0°)</td><td></td></tr>
+<tr class="unassigned"><td>U+25B6</td><td>9654</td><td>▶︎</td><td>▶︎</td><td>BLACK RIGHT-POINTING TRIANGLE</td><td></td><td></td></tr>
+<tr><td>U+25B7</td><td>9655</td><td>▷</td><td>▷</td><td>WHITE RIGHT-POINTING TRIANGLE</td><td>Mobiles Gerät, Landscape (Rotation -90°)</td><td></td></tr>
+<tr><td>U+25BC</td><td>9660</td><td>▼</td><td>▼</td><td>BLACK DOWN-POINTING TRIANGLE</td><td>Dreieck Unten</td><td>]</td></tr>
+<tr><td>U+25BD</td><td>9661</td><td>▽</td><td>▽</td><td>WHITE DOWN-POINTING TRIANGLE</td><td>Mobiles Gerät, Portrait (Rotation 180°)</td><td></td></tr>
+<tr class="unassigned"><td>U+25C0</td><td>9664</td><td>◀︎</td><td>◀︎</td><td>BLACK LEFT-POINTING TRIANGLE</td><td></td><td></td></tr>
+<tr><td>U+25C1</td><td>9665</td><td>◁</td><td>◁</td><td>WHITE LEFT-POINTING TRIANGLE</td><td>Mobiles Gerät, Landscape (Rotation 90°)</td><td></td></tr>
+<tr><td>U+25CB</td><td>9675</td><td>○</td><td>○</td><td>WHITE CIRCLE</td><td>Select-Box, Nicht Ausgewählt</td><td>c</td></tr>
+<tr><td>U+25CF</td><td>9679</td><td>●</td><td>●</td><td>BLACK CIRCLE</td><td>Select-Box (?)</td><td>d</td></tr>
+<tr><td>U+25D8</td><td>9688</td><td>◘</td><td>◘</td><td>INVERSE BULLET</td><td>Kamera, Screenshot</td><td></td></tr>
+<tr><td>U+25FB</td><td>9723</td><td>◻︎</td><td>◻︎</td><td>WHITE MEDIUM SQUARE</td><td>Select-Box, Nicht Ausgewählt (Groß)</td><td>c</td></tr>
+<tr><td>U+25FC</td><td>9724</td><td>◼︎</td><td>◼︎</td><td>BLACK MEDIUM SQUARE</td><td>Select-Box (Groß) (?)</td><td>d</td></tr>
+<tr class="unassigned"><td>U+2600</td><td>9728</td><td>☀︎</td><td>☀︎</td><td>BLACK SUN WITH RAYS</td><td></td><td></td></tr>
+<tr><td>U+2605</td><td>9733</td><td>★</td><td>★</td><td>BLACK STAR</td><td>Bewertungsstern</td><td>"</td></tr>
+<tr><td>U+2606</td><td>9734</td><td>☆</td><td>☆</td><td>WHITE STAR</td><td>Bewertungsstern (Kontur)</td><td>!</td></tr>
+<tr><td>U+2609</td><td>9737</td><td>☉</td><td>☉</td><td>SUN</td><td>Helligkeit Min</td><td>r</td></tr>
+<tr><td>U+263C</td><td>9788</td><td>☼</td><td>☼</td><td>WHITE SUN WITH RAYS</td><td>Helligkeit Max</td><td></td></tr>
+<tr><td>U+2708</td><td>9992</td><td>✈︎</td><td>✈︎</td><td>AIRPLANE</td><td>Flugmodus</td><td></td></tr>
+<tr><td>U+27F2</td><td>10226</td><td>⟲</td><td>⟲</td><td>ANTICLOCKWISE GAPPED CIRCLE ARROW</td><td>Wiederholen (?)</td><td></td></tr>
+<tr><td>U+27F3</td><td>10227</td><td>⟳</td><td>⟳</td><td>CLOCKWISE GAPPED CIRCLE ARROW</td><td>Rotieren</td><td>/</td></tr>
+<tr><td>U+2940</td><td>10560</td><td>⥀</td><td>⥀</td><td>ANTICLOCKWISE CLOSED CIRCLE ARROW</td><td>30 Sekunden zurück (Audio)</td><td>?</td></tr>
+<tr><td>U+2941</td><td>10561</td><td>⥁</td><td>⥁</td><td>CLOCKWISE CLOSED CIRCLE ARROW</td><td>30 Sekunden vorwärts (Audio)</td><td>¿</td></tr>
+</table>
+
+</body>
+</html>
+

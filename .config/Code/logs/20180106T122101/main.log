@@ -1,0 +1,10 @@
+[2018-01-06 12:21:33.342] [main] [error] [uncaught exception in main]: Error: net::ERR_NAME_NOT_RESOLVED
+
+Error: net::ERR_NAME_NOT_RESOLVED
+[2018-01-06 12:21:33.343] [main] [error] Error: net::ERR_NAME_NOT_RESOLVED
+
+Error: net::ERR_NAME_NOT_RESOLVED
+    at Timeout._onTimeout (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:88:971)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)

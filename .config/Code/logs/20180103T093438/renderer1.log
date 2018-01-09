@@ -1,0 +1,9 @@
+[2018-01-03 09:35:10.584] [renderer1] [error] net::ERR_NAME_NOT_RESOLVED
+
+Error: net::ERR_NAME_NOT_RESOLVED: Error: net::ERR_NAME_NOT_RESOLVED
+
+Error: net::ERR_NAME_NOT_RESOLVED
+    at Timeout._onTimeout (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:88:971)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)

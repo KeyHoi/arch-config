@@ -1,0 +1,83 @@
+2017/12/27-15:07:05.109 21143 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_webreader.mytolino.com_0.indexeddb.leveldb/MANIFEST-000001
+2017/12/27-15:07:07.162 17285 Current memtable full; waiting...
+2017/12/27-15:07:07.162 8170 Level-0 table #5: started
+2017/12/27-15:07:07.191 8170 Level-0 table #5: 529 bytes OK
+2017/12/27-15:07:07.266 8170 Delete type=0 #3
+2017/12/27-15:07:07.267 8170 Level-0 table #7: started
+2017/12/27-15:07:07.267 8170 Level-0 table #7: 0 bytes OK
+2017/12/27-15:07:07.318 8170 Delete type=0 #4
+2017/12/27-15:07:07.318 8170 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2017/12/27-15:07:10.516 17285 Current memtable full; waiting...
+2017/12/27-15:07:10.516 8170 Level-0 table #9: started
+2017/12/27-15:07:10.557 8170 Level-0 table #9: 370 bytes OK
+2017/12/27-15:07:10.669 8170 Delete type=0 #6
+2017/12/27-15:07:10.669 8170 Level-0 table #11: started
+2017/12/27-15:07:10.669 8170 Level-0 table #11: 0 bytes OK
+2017/12/27-15:07:10.792 8170 Delete type=0 #8
+2017/12/27-15:07:10.792 8170 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2017/12/27-15:07:10.792 8170 Manual compaction at level-1 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at '\x00\x01\x00\x00\x05' @ 19 : 0
+2017/12/27-15:07:10.792 8170 Compacting 1@1 + 1@2 files
+2017/12/27-15:07:10.851 8170 Generated table #12@1: 3 keys, 214 bytes
+2017/12/27-15:07:10.851 8170 Compacted 1@1 + 1@2 files => 214 bytes
+2017/12/27-15:07:10.885 8170 compacted to: files[ 0 0 1 0 0 0 0 ]
+2017/12/27-15:07:10.885 8170 Delete type=2 #9
+2017/12/27-15:07:10.885 8170 Delete type=2 #5
+2017/12/27-15:07:10.885 8170 Manual compaction at level-1 from '\x00\x01\x00\x00\x05' @ 19 : 0 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2017/12/27-15:07:12.330 20527 Current memtable full; waiting...
+2017/12/27-15:07:12.330 8170 Level-0 table #14: started
+2017/12/27-15:07:12.371 8170 Level-0 table #14: 710 bytes OK
+2017/12/27-15:07:12.430 8170 Delete type=0 #10
+2017/12/27-15:07:12.430 8170 Level-0 table #16: started
+2017/12/27-15:07:12.430 8170 Level-0 table #16: 0 bytes OK
+2017/12/27-15:07:12.499 8170 Delete type=0 #13
+2017/12/27-15:07:12.500 8170 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2017/12/27-15:07:35.456 21141 Current memtable full; waiting...
+2017/12/27-15:07:35.456 8170 Level-0 table #18: started
+2017/12/27-15:07:35.622 8170 Level-0 table #18: 54772 bytes OK
+2017/12/27-15:07:35.674 8170 Delete type=0 #15
+2017/12/27-15:07:35.674 8170 Level-0 table #20: started
+2017/12/27-15:07:35.674 8170 Level-0 table #20: 0 bytes OK
+2017/12/27-15:07:35.715 8170 Delete type=0 #17
+2017/12/27-15:07:35.716 8170 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x01\x02\x01W\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00c\x00d\x00p\x00.\x00p\x00a\x00g\x00e\x00p\x00l\x00a\x00c\x00e\x00.\x00d\x00e\x00/\x00c\x00d\x00p\x00/\x00p\x00u\x00b\x00l\x00i\x00c\x00/\x00p\x00u\x00b\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00s\x00/\x00D\x00T\x000\x002\x004\x009\x00/\x004\x000\x003\x008\x008\x005\x008\x001\x000\x001\x007\x009\x008\x00/\x00c\x00o\x00v\x00e\x00r\x00?\x00s\x00i\x00z\x00e\x00=\x00B\x00S\x00-\x00B\x000\x003' @ 58 : 1
+2017/12/27-15:07:35.716 8170 Compacting 1@0 + 1@1 files
+2017/12/27-15:07:35.757 8170 Generated table #21@0: 18 keys, 54871 bytes
+2017/12/27-15:07:35.757 8170 Compacted 1@0 + 1@1 files => 54871 bytes
+2017/12/27-15:07:35.865 8170 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/12/27-15:07:35.865 8170 Delete type=2 #14
+2017/12/27-15:07:35.865 8170 Delete type=2 #18
+2017/12/27-15:07:35.866 8170 Manual compaction at level-0 from '\x00\x05\x01\x02\x01W\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00c\x00d\x00p\x00.\x00p\x00a\x00g\x00e\x00p\x00l\x00a\x00c\x00e\x00.\x00d\x00e\x00/\x00c\x00d\x00p\x00/\x00p\x00u\x00b\x00l\x00i\x00c\x00/\x00p\x00u\x00b\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00s\x00/\x00D\x00T\x000\x002\x004\x009\x00/\x004\x000\x003\x008\x008\x005\x008\x001\x000\x001\x007\x009\x008\x00/\x00c\x00o\x00v\x00e\x00r\x00?\x00s\x00i\x00z\x00e\x00=\x00B\x00S\x00-\x00B\x000\x003' @ 58 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2017/12/27-15:07:47.175 8170 Level-0 table #23: started
+2017/12/27-15:07:47.433 8170 Level-0 table #23: 6576547 bytes OK
+2017/12/27-15:07:47.736 8170 Delete type=0 #19
+2017/12/27-15:07:48.374 21143 Current memtable full; waiting...
+2017/12/27-15:07:48.374 8170 Level-0 table #25: started
+2017/12/27-15:07:48.416 8170 Level-0 table #25: 1568 bytes OK
+2017/12/27-15:07:48.449 8170 Delete type=0 #22
+2017/12/27-15:07:48.450 8170 Level-0 table #27: started
+2017/12/27-15:07:48.450 8170 Level-0 table #27: 0 bytes OK
+2017/12/27-15:07:48.516 8170 Delete type=0 #24
+2017/12/27-15:07:48.516 8170 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x01\x02\x01\x14\x00D\x00T\x000\x002\x005\x000\x00.\x009\x007\x008\x003\x004\x008\x006\x007\x003\x005\x008\x007\x001' @ 128 : 1
+2017/12/27-15:07:48.516 8170 Compacting 2@0 + 1@1 files
+2017/12/27-15:07:48.657 8170 Generated table #28@0: 61 keys, 6629306 bytes
+2017/12/27-15:07:48.699 8170 Generated table #29@0: 1 keys, 266 bytes
+2017/12/27-15:07:48.699 8170 Compacted 2@0 + 1@1 files => 6629572 bytes
+2017/12/27-15:07:48.740 8170 compacted to: files[ 0 2 1 0 0 0 0 ]
+2017/12/27-15:07:48.740 8170 Delete type=2 #23
+2017/12/27-15:07:48.743 8170 Delete type=2 #21
+2017/12/27-15:07:48.744 8170 Delete type=2 #25
+2017/12/27-15:07:48.744 8170 Manual compaction at level-0 from '\x00\x08\x01\x02\x01\x14\x00D\x00T\x000\x002\x005\x000\x00.\x009\x007\x008\x003\x004\x008\x006\x007\x003\x005\x008\x007\x001' @ 128 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2017/12/27-15:16:48.866 22307 Current memtable full; waiting...
+2017/12/27-15:16:48.955 8170 Level-0 table #31: started
+2017/12/27-15:16:49.039 8170 Level-0 table #31: 370 bytes OK
+2017/12/27-15:16:49.102 8170 Delete type=0 #26
+2017/12/27-15:16:49.103 8170 Level-0 table #33: started
+2017/12/27-15:16:49.103 8170 Level-0 table #33: 0 bytes OK
+2017/12/27-15:16:49.156 8170 Delete type=0 #30
+2017/12/27-15:16:49.156 8170 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 138 : 0
+2017/12/27-15:16:49.156 8170 Compacting 1@0 + 1@1 files
+2017/12/27-15:16:49.502 8170 Generated table #34@0: 58 keys, 6629191 bytes
+2017/12/27-15:16:49.502 8170 Compacted 1@0 + 1@1 files => 6629191 bytes
+2017/12/27-15:16:49.545 8170 compacted to: files[ 0 2 1 0 0 0 0 ]
+2017/12/27-15:16:49.545 8170 Delete type=2 #31
+2017/12/27-15:16:49.546 8170 Delete type=2 #28
+2017/12/27-15:16:49.574 8170 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 138 : 0 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

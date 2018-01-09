@@ -1,0 +1,10 @@
+[2018-01-09 09:34:23.368] [main] [error] [uncaught exception in main]: Error: net::ERR_ADDRESS_UNREACHABLE
+
+Error: net::ERR_ADDRESS_UNREACHABLE
+[2018-01-09 09:34:23.368] [main] [error] Error: net::ERR_ADDRESS_UNREACHABLE
+
+Error: net::ERR_ADDRESS_UNREACHABLE
+    at Timeout._onTimeout (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:88:971)
+    at ontimeout (timers.js:386:14)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)

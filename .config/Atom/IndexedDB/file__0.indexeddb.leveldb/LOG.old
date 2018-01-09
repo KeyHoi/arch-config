@@ -1,0 +1,6 @@
+2017/11/19-10:05:11.140 1164 Reusing MANIFEST /home/keyhoi/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2017/11/19-10:05:11.140 1164 Recovering log #25
+2017/11/19-10:05:11.859 1164 Reusing old log /home/keyhoi/.config/Atom/IndexedDB/file__0.indexeddb.leveldb/000025.log 
+2017/11/19-22:00:31.949 6166 Level-0 table #29: started
+2017/11/19-22:00:33.251 6166 Level-0 table #29: 2258722 bytes OK
+2017/11/19-22:00:33.335 6166 Delete type=0 #25

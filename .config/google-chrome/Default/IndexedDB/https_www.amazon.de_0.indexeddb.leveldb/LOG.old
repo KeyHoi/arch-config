@@ -1,0 +1,6 @@
+2018/01/08-21:06:07.593 28292 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.amazon.de_0.indexeddb.leveldb/MANIFEST-000001
+2018/01/08-21:06:07.609 28292 Recovering log #13
+2018/01/08-21:06:07.620 28292 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.amazon.de_0.indexeddb.leveldb/000013.log 
+2018/01/08-21:06:10.527 2297 Level-0 table #17: started
+2018/01/08-21:06:10.749 2297 Level-0 table #17: 1231055 bytes OK
+2018/01/08-21:06:10.791 2297 Delete type=0 #13

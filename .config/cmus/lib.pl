@@ -1,3 +1,7 @@
+/home/keyhoi/Music/Noah - Pumped Up Kicks (Aerokind Edit).mp3
+/home/keyhoi/Music/YONAS - 'Don't Give A Damn' (Official Video) Now on iTunes.mp3
+/home/keyhoi/Music/not_moved/Noah - Pumped Up Kicks (Aerokind Edit).mp3
+/home/keyhoi/Music/not_moved/YONAS - 'Don't Give A Damn' (Official Video) Now on iTunes.mp3
 /home/keyhoi/Music/Genetikk - A la Muerte feat. Kollegah.m4a
 /home/keyhoi/Music/Genetikk - Spezies.m4a
 /home/keyhoi/Music/Genetikk - Kappa Alpha Rho.m4a
