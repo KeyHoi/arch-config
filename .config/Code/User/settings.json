@@ -1,4 +1,0 @@
-{
-    "vim.disableAnnoyingNeovimMessage": true,
-    "python.linting.enabledWithoutWorkspace": false
-}

@@ -1,8 +1,0 @@
-[2018-01-06 12:21:25.784] [exthost1] [info] extension host started
-[2018-01-06 12:21:25.806] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
-[2018-01-06 12:21:25.806] [exthost1] [info] ExtensionService#loadCommonJSModule /opt/visual-studio-code/resources/app/extensions/emmet/out/extension
-[2018-01-06 12:21:26.362] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
-[2018-01-06 12:21:26.362] [exthost1] [info] ExtensionService#loadCommonJSModule /opt/visual-studio-code/resources/app/extensions/git/out/main
-[2018-01-06 12:21:27.584] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
-[2018-01-06 12:21:27.584] [exthost1] [info] ExtensionService#loadCommonJSModule /opt/visual-studio-code/resources/app/extensions/merge-conflict/out/extension
-[2018-01-06 12:21:27.792] [exthost1] [info] eager extensions activated
