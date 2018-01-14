@@ -435,9 +435,9 @@
             "uiState": {
                 "mode": 1,
                 "x": 1,
-                "y": 33,
-                "width": 1366,
-                "height": 768
+                "y": 56,
+                "width": 1364,
+                "height": 711
             }
         }
     },
@@ -466,5 +466,5 @@
     },
     "theme": "vs-dark vscode-theme-defaults-themes-dark_plus-json",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/home/keyhoi/WS1718/IT-Security/Notes"
+    "pickerWorkingDir": "/home/keyhoi"
 }

@@ -1,3 +1,3 @@
-2018/01/09-15:19:22.950 20908 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.google.de_0.indexeddb.leveldb/MANIFEST-000001
-2018/01/09-15:19:22.950 20908 Recovering log #3
-2018/01/09-15:19:22.986 20908 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.google.de_0.indexeddb.leveldb/000003.log 
+2018/01/13-04:56:08.194 28776 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.google.de_0.indexeddb.leveldb/MANIFEST-000001
+2018/01/13-04:56:08.194 28776 Recovering log #4
+2018/01/13-04:56:08.195 28776 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_www.google.de_0.indexeddb.leveldb/000004.log 

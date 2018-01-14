@@ -236,8 +236,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # decrease screen brightness
 exec --no-startup-id urxvt -name terminal
 exec --no-startup-id urxvt -name filemanager -e ranger
 exec --no-startup-id urxvt -name calendar -e calcurse
-exec --no-startup-id spotify
-#exec --no-startup-id urxvt -name mail -e mutt -F .config/mutt/muttrc
+# exec --no-startup-id spotify
 exec --no-startup-id termite --name dropdown
 exec --no-startup-id code
 

@@ -1,21 +1,21 @@
-2018/01/08-23:11:48.452 22890 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2018/01/08-23:11:48.470 22890 Recovering log #1210
-2018/01/08-23:11:48.484 22890 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/001210.log 
-2018/01/08-23:11:51.560 2297 Level-0 table #1214: started
-2018/01/08-23:11:51.773 2297 Level-0 table #1214: 1111220 bytes OK
-2018/01/08-23:11:51.841 2297 Delete type=0 #1210
-2018/01/08-23:11:51.842 2297 Compacting 4@0 + 1@1 files
-2018/01/08-23:11:51.940 2297 Generated table #1215@0: 15 keys, 1129648 bytes
-2018/01/08-23:11:51.940 2297 Compacted 4@0 + 1@1 files => 1129648 bytes
-2018/01/08-23:11:51.998 2297 compacted to: files[ 0 1 1 0 0 0 0 ]
-2018/01/08-23:11:51.998 2297 Delete type=2 #1209
-2018/01/08-23:11:52.014 2297 Delete type=2 #1204
-2018/01/08-23:11:52.014 2297 Delete type=2 #1207
-2018/01/08-23:11:52.014 2297 Delete type=2 #1211
-2018/01/08-23:11:52.015 2297 Delete type=2 #1214
-2018/01/08-23:11:52.556 2297 Level-0 table #1217: started
-2018/01/08-23:11:52.674 2297 Level-0 table #1217: 1129266 bytes OK
-2018/01/08-23:11:52.764 2297 Delete type=0 #1213
-2018/01/08-23:11:53.323 2297 Level-0 table #1219: started
-2018/01/08-23:11:53.460 2297 Level-0 table #1219: 1129679 bytes OK
-2018/01/08-23:11:53.587 2297 Delete type=0 #1216
+2018/01/12-17:21:47.955 6790 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/01/12-17:21:47.968 6790 Recovering log #1280
+2018/01/12-17:21:47.977 6790 Reusing old log /home/keyhoi/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/001280.log 
+2018/01/12-17:21:49.589 6829 Level-0 table #1284: started
+2018/01/12-17:21:49.724 6829 Level-0 table #1284: 1111189 bytes OK
+2018/01/12-17:21:49.824 6829 Delete type=0 #1280
+2018/01/12-17:21:50.414 6829 Level-0 table #1286: started
+2018/01/12-17:21:50.508 6829 Level-0 table #1286: 1129232 bytes OK
+2018/01/12-17:21:50.615 6829 Delete type=0 #1283
+2018/01/12-17:21:50.619 6829 Compacting 4@0 + 1@1 files
+2018/01/12-17:21:50.714 6829 Generated table #1287@0: 15 keys, 1129616 bytes
+2018/01/12-17:21:50.714 6829 Compacted 4@0 + 1@1 files => 1129616 bytes
+2018/01/12-17:21:50.755 6829 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/01/12-17:21:50.756 6829 Delete type=2 #1277
+2018/01/12-17:21:50.756 6829 Delete type=2 #1281
+2018/01/12-17:21:50.756 6829 Delete type=2 #1284
+2018/01/12-17:21:50.756 6829 Delete type=2 #1286
+2018/01/12-17:21:50.756 6829 Delete type=2 #1279
+2018/01/12-17:21:51.090 6829 Level-0 table #1289: started
+2018/01/12-17:21:51.179 6829 Level-0 table #1289: 1129649 bytes OK
+2018/01/12-17:21:51.221 6829 Delete type=0 #1285

@@ -1,5 +1,5 @@
 {
-   "checksum": "a7af2af0c1849e135ef6d3902c7e7083",
+   "checksum": "ec0f81d82864f3821194e476ce8accae",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -8,10 +8,10 @@
                "id": "28",
                "meta_info": {
                   "last_visited": "13156074965386341",
-                  "last_visited_desktop": "13159886340844001"
+                  "last_visited_desktop": "13160407624654662"
                },
                "name": "TUM-Moodle",
-               "sync_transaction_version": "3500",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.moodle.tum.de/"
             }, {
@@ -19,10 +19,10 @@
                "id": "64",
                "meta_info": {
                   "last_visited": "13157038151238161",
-                  "last_visited_desktop": "13159886371569800"
+                  "last_visited_desktop": "13160330036425249"
                },
                "name": "TUMonline",
-               "sync_transaction_version": "3505",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://campus.tum.de/tumonline/webnav.ini?pUrl=wbanmeldung.durchfuehren%3Fctxid%3Dcheck%26cusergroup%3D%26cinframe%3D%26pLogonMask%3D%26curl%3D"
             }, {
@@ -30,10 +30,10 @@
                "id": "65",
                "meta_info": {
                   "last_visited": "13156091619544580",
-                  "last_visited_desktop": "13159886344557878"
+                  "last_visited_desktop": "13160407637039436"
                },
                "name": "Analysis",
-               "sync_transaction_version": "3501",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.moodle.tum.de/course/view.php?id=36704"
             }, {
@@ -41,10 +41,10 @@
                "id": "87",
                "meta_info": {
                   "last_visited": "13155826872729570",
-                  "last_visited_desktop": "13159901639558664"
+                  "last_visited_desktop": "13160331823814874"
                },
                "name": "IT-Security",
-               "sync_transaction_version": "3520",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.moodle.tum.de/course/view.php?id=35138"
             }, {
@@ -52,25 +52,25 @@
                "id": "89",
                "meta_info": {
                   "last_visited": "13157038283768888",
-                  "last_visited_desktop": "13159903480720851"
+                  "last_visited_desktop": "13160413553038868"
                },
                "name": "ADM",
-               "sync_transaction_version": "3527",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.moodle.tum.de/course/view.php?id=37923"
             }, {
                "date_added": "13156241944975768",
                "id": "105",
                "meta_info": {
-                  "last_visited_desktop": "13159875758368267"
+                  "last_visited_desktop": "13160331962729497"
                },
                "name": "NumProg",
-               "sync_transaction_version": "3474",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.dropbox.com/sh/n5umw7z6mx08emy/AADoP-WcN4eBrV2po2lFhtFfa?dl=0"
             } ],
             "date_added": "13141732331952522",
-            "date_modified": "13157038567468654",
+            "date_modified": "13160413577636338",
             "id": "7",
             "name": "Uni",
             "sync_transaction_version": "3141",
@@ -80,10 +80,10 @@
                "date_added": "13135255412726758",
                "id": "39",
                "meta_info": {
-                  "last_visited_desktop": "13159904594235643"
+                  "last_visited_desktop": "13160376275559502"
                },
                "name": "YouTube",
-               "sync_transaction_version": "3538",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.youtube.com/"
             }, {
@@ -119,7 +119,7 @@
                "url": "https://www.amazon.de/Amazon-Video/b/?&node=3010075031&ref=tvodatl17&ref=dvm_de_xs_gw_hud_t_en_all_010&pf_rd_p=3dc1fe03-371c-46a9-9c08-2b091768c0a8&pf_rd_r=ZTA92BDJD5CSKHF9PF4R"
             } ],
             "date_added": "13141732311789087",
-            "date_modified": "13159629820398781",
+            "date_modified": "13160413577636438",
             "id": "6",
             "name": "Video",
             "sync_transaction_version": "3141",
@@ -149,10 +149,10 @@
                "date_added": "13157303692566888",
                "id": "115",
                "meta_info": {
-                  "last_visited_desktop": "13159220239457588"
+                  "last_visited_desktop": "13160069781937718"
                },
                "name": "9GAG",
-               "sync_transaction_version": "3141",
+               "sync_transaction_version": "3665",
                "type": "url",
                "url": "https://9gag.com/"
             } ],
@@ -167,10 +167,10 @@
                "date_added": "13150213873083134",
                "id": "47",
                "meta_info": {
-                  "last_visited_desktop": "13159880865129831"
+                  "last_visited_desktop": "13160413585388712"
                },
                "name": "WhatsApp",
-               "sync_transaction_version": "3610",
+               "sync_transaction_version": "3870",
                "type": "url",
                "url": "https://web.whatsapp.com/"
             }, {
@@ -185,7 +185,7 @@
                "url": "https://web.telegram.org/#/im?p=g28705077"
             } ],
             "date_added": "13150213897242839",
-            "date_modified": "13159456910793368",
+            "date_modified": "13160413577636444",
             "id": "48",
             "name": "Kommunikation",
             "sync_transaction_version": "3141",
@@ -195,10 +195,10 @@
                "date_added": "13141732274571316",
                "id": "19",
                "meta_info": {
-                  "last_visited_desktop": "13159911214093818"
+                  "last_visited_desktop": "13160075468195753"
                },
                "name": "MatheZeichen",
-               "sync_transaction_version": "3582",
+               "sync_transaction_version": "3667",
                "type": "url",
                "url": "https://www.matheretter.de/mathe-zeichen"
             }, {
@@ -206,10 +206,10 @@
                "id": "20",
                "meta_info": {
                   "last_visited": "13157211129722642",
-                  "last_visited_desktop": "13159906605681152"
+                  "last_visited_desktop": "13160409110110818"
                },
                "name": "WolframAlpha",
-               "sync_transaction_version": "3555",
+               "sync_transaction_version": "3863",
                "type": "url",
                "url": "https://www.wolframalpha.com/"
             }, {
@@ -231,7 +231,7 @@
                "url": "http://convert2mp3.net/index.php?p=convert"
             } ],
             "date_added": "13143206717450959",
-            "date_modified": "13157303692566888",
+            "date_modified": "13160413577636450",
             "id": "9",
             "name": "Tools",
             "sync_transaction_version": "3141",
@@ -241,20 +241,20 @@
                "date_added": "13157025866615188",
                "id": "108",
                "meta_info": {
-                  "last_visited_desktop": "13159622110315130"
+                  "last_visited_desktop": "13160132520910475"
                },
                "name": "Motius - Outlook",
-               "sync_transaction_version": "3357",
+               "sync_transaction_version": "3670",
                "type": "url",
                "url": "https://outlook.office.com/owa/?realm=motius.de&exsvurl=1&ll-cc=1031&modurl=0"
             }, {
                "date_added": "13155221637451570",
                "id": "98",
                "meta_info": {
-                  "last_visited_desktop": "13159617484805616"
+                  "last_visited_desktop": "13160132550251606"
                },
                "name": "Motius - GitLab",
-               "sync_transaction_version": "3349",
+               "sync_transaction_version": "3671",
                "type": "url",
                "url": "https://gitlab.motius.de/"
             }, {
@@ -271,20 +271,20 @@
                "date_added": "13157301793717229",
                "id": "112",
                "meta_info": {
-                  "last_visited_desktop": "13159645044358371"
+                  "last_visited_desktop": "13160161613948312"
                },
                "name": "Motius - Projekte",
-               "sync_transaction_version": "3380",
+               "sync_transaction_version": "3710",
                "type": "url",
                "url": "https://www.motius.de/de/projekte/index"
             }, {
                "date_added": "13157541075184129",
                "id": "118",
                "meta_info": {
-                  "last_visited_desktop": "13159818263593356"
+                  "last_visited_desktop": "13160161599636827"
                },
                "name": "Motius - Slack",
-               "sync_transaction_version": "3430",
+               "sync_transaction_version": "3709",
                "type": "url",
                "url": "https://motius.slack.com/"
             } ],
@@ -305,9 +305,69 @@
                "sync_transaction_version": "3141",
                "type": "url",
                "url": "https://www.diplomarbeiten24.de/document/129"
+            }, {
+               "date_added": "13160289551679867",
+               "id": "130",
+               "meta_info": {
+                  "last_visited_desktop": "13160289551680703"
+               },
+               "name": "Intranet der Fakultät für Informatik : Thesisankündigungen",
+               "sync_transaction_version": "3842",
+               "type": "url",
+               "url": "https://intranet.in.tum.de/pages/14qh3nhl9lznu/Thesisankuendigungen"
+            }, {
+               "date_added": "13160289562488285",
+               "id": "131",
+               "meta_info": {
+                  "last_visited_desktop": "13160289562489330"
+               },
+               "name": "75 Themen für Eure Informatik-Bachelorarbeit • GWriters Blog",
+               "sync_transaction_version": "3846",
+               "type": "url",
+               "url": "https://gwriters.de/blog/bachelorarbeit-thema-informatik"
+            }, {
+               "date_added": "13160289566754042",
+               "id": "132",
+               "meta_info": {
+                  "last_visited_desktop": "13160289566754944"
+               },
+               "name": "12 hilfreiche Themen für die Bachelorarbeit in Informatik - Thesius Blog",
+               "sync_transaction_version": "3850",
+               "type": "url",
+               "url": "https://www.thesius.de/blog/articles/bachelorarbeit-thema-liste-informatik/"
+            }, {
+               "date_added": "13160289598628698",
+               "id": "133",
+               "meta_info": {
+                  "last_visited_desktop": "13160289598629247"
+               },
+               "name": "TUM EI SEC: Studentische Arbeiten",
+               "sync_transaction_version": "3854",
+               "type": "url",
+               "url": "http://www.sec.ei.tum.de/studentische-arbeiten/"
+            }, {
+               "date_added": "13160289634398829",
+               "id": "134",
+               "meta_info": {
+                  "last_visited_desktop": "13160289634399649"
+               },
+               "name": "Student Work — Site",
+               "sync_transaction_version": "3858",
+               "type": "url",
+               "url": "https://www.sec.in.tum.de/i20/student-work"
+            }, {
+               "date_added": "13160289675636987",
+               "id": "135",
+               "meta_info": {
+                  "last_visited_desktop": "13160289675637836"
+               },
+               "name": "TUM Info VIII: Theses",
+               "sync_transaction_version": "3862",
+               "type": "url",
+               "url": "https://www.net.in.tum.de/theses/"
             } ],
             "date_added": "13157302182674080",
-            "date_modified": "13157302214537230",
+            "date_modified": "13160289675636987",
             "id": "113",
             "name": "Bachelorarbeit",
             "sync_transaction_version": "3141",
@@ -316,10 +376,10 @@
             "date_added": "13135255445693663",
             "id": "11",
             "meta_info": {
-               "last_visited_desktop": "13159732042551571"
+               "last_visited_desktop": "13160270234494241"
             },
             "name": "OnePiece",
-            "sync_transaction_version": "3394",
+            "sync_transaction_version": "3830",
             "type": "url",
             "url": "http://onepiece-tube.com/"
          }, {
@@ -337,10 +397,10 @@
             "id": "80",
             "meta_info": {
                "last_visited": "13158400373314738",
-               "last_visited_desktop": "13159901617528129"
+               "last_visited_desktop": "13160324773418430"
             },
             "name": "heise Security",
-            "sync_transaction_version": "3518",
+            "sync_transaction_version": "3863",
             "type": "url",
             "url": "https://www.heise.de/security/"
          }, {
@@ -353,9 +413,19 @@
             "sync_transaction_version": "3532",
             "type": "url",
             "url": "https://wiki.archlinux.org/index.php/Synchronization_and_backup_programs"
+         }, {
+            "date_added": "13160047512927644",
+            "id": "128",
+            "meta_info": {
+               "last_visited_desktop": "13160324776856305"
+            },
+            "name": "python - django.db.utils.ProgrammingError: relation already exists - Stack Overflow",
+            "sync_transaction_version": "3863",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/29830928/django-db-utils-programmingerror-relation-already-exists"
          } ],
          "date_added": "13147123531630089",
-         "date_modified": "13159903652164800",
+         "date_modified": "13160413577636463",
          "id": "1",
          "name": "Lesezeichenleiste",
          "type": "folder"
@@ -368,7 +438,7 @@
          "name": "Weitere Lesezeichen",
          "type": "folder"
       },
-      "sync_transaction_version": "3611",
+      "sync_transaction_version": "3870",
       "synced": {
          "children": [  ],
          "date_added": "13147123531630096",

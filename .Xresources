@@ -1,5 +1,5 @@
- URxvt.font: 		xft:"monospace":size=10
-! urxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
+! URxvt.font: 		xft:"monospace":size=10
+urxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=12
 URxvt.letterSpace: 	0
 
 URxvt.scrollBar: 	false

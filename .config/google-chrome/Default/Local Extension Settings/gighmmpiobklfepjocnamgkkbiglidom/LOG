@@ -1,49 +1,23 @@
-2018/01/09-10:26:11.658 11285 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
-2018/01/09-10:26:11.660 11285 Recovering log #8209
-2018/01/09-10:26:11.667 11285 Reusing old log /home/keyhoi/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/008209.log 
-2018/01/09-10:27:11.905 12282 Level-0 table #8214: started
-2018/01/09-10:27:12.067 12282 Level-0 table #8214: 3268502 bytes OK
-2018/01/09-10:27:12.110 12282 Delete type=0 #8209
-2018/01/09-11:26:31.960 12282 Level-0 table #8216: started
-2018/01/09-11:26:32.112 12282 Level-0 table #8216: 3268503 bytes OK
-2018/01/09-11:26:32.163 12282 Delete type=0 #8213
-2018/01/09-11:27:12.088 12282 Level-0 table #8218: started
-2018/01/09-11:27:12.234 12282 Level-0 table #8218: 3268399 bytes OK
-2018/01/09-11:27:12.293 12282 Delete type=0 #8215
-2018/01/09-11:27:12.295 12282 Compacting 4@0 + 2@1 files
-2018/01/09-11:27:12.491 12282 Generated table #8219@0: 1 keys, 3268254 bytes
-2018/01/09-11:27:12.533 12282 Generated table #8220@0: 7 keys, 586 bytes
-2018/01/09-11:27:12.533 12282 Compacted 4@0 + 2@1 files => 3268840 bytes
-2018/01/09-11:27:12.584 12282 compacted to: files[ 0 4 7 0 0 0 0 ]
-2018/01/09-11:27:12.585 12282 Delete type=2 #8214
-2018/01/09-11:27:12.585 12282 Delete type=2 #8216
-2018/01/09-11:27:12.586 12282 Delete type=2 #8218
-2018/01/09-11:27:12.586 12282 Delete type=2 #8210
-2018/01/09-11:27:12.587 12282 Delete type=2 #8208
-2018/01/09-11:27:12.587 12282 Delete type=2 #8211
-2018/01/09-12:27:11.475 12282 Level-0 table #8222: started
-2018/01/09-12:27:11.592 12282 Level-0 table #8222: 3268500 bytes OK
-2018/01/09-12:27:11.692 12282 Delete type=0 #8217
-2018/01/09-12:27:11.855 12282 Level-0 table #8224: started
-2018/01/09-12:27:11.965 12282 Level-0 table #8224: 3268246 bytes OK
-2018/01/09-12:27:12.008 12282 Delete type=0 #8221
-2018/01/09-13:27:11.483 12282 Level-0 table #8226: started
-2018/01/09-13:27:11.617 12282 Level-0 table #8226: 3268120 bytes OK
-2018/01/09-13:27:11.667 12282 Delete type=0 #8223
-2018/01/09-13:27:11.789 12282 Level-0 table #8228: started
-2018/01/09-13:27:11.915 12282 Level-0 table #8228: 3267876 bytes OK
-2018/01/09-13:27:11.960 12282 Delete type=0 #8225
-2018/01/09-13:27:11.962 12282 Compacting 4@0 + 2@1 files
-2018/01/09-13:27:12.215 12282 Generated table #8229@0: 1 keys, 3267876 bytes
-2018/01/09-13:27:12.249 12282 Generated table #8230@0: 7 keys, 586 bytes
-2018/01/09-13:27:12.249 12282 Compacted 4@0 + 2@1 files => 3268462 bytes
-2018/01/09-13:27:12.291 12282 compacted to: files[ 0 4 7 0 0 0 0 ]
-2018/01/09-13:27:12.291 12282 Delete type=2 #8226
-2018/01/09-13:27:12.291 12282 Delete type=2 #8219
-2018/01/09-13:27:12.292 12282 Delete type=2 #8222
-2018/01/09-13:27:12.292 12282 Delete type=2 #8228
-2018/01/09-13:27:12.293 12282 Delete type=2 #8224
-2018/01/09-13:27:12.293 12282 Delete type=2 #8220
-2018/01/09-15:16:06.285 12282 Level-0 table #8232: started
-2018/01/09-15:16:06.485 12282 Level-0 table #8232: 3268123 bytes OK
-2018/01/09-15:16:06.537 12282 Delete type=0 #8227
+2018/01/14-15:51:50.590 4104 Reusing MANIFEST /home/keyhoi/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2018/01/14-15:51:51.150 4104 Recovering log #8406
+2018/01/14-15:51:51.169 4104 Reusing old log /home/keyhoi/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/008406.log 
+2018/01/14-15:52:49.264 4701 Level-0 table #8410: started
+2018/01/14-15:52:49.419 4701 Level-0 table #8410: 3268842 bytes OK
+2018/01/14-15:52:49.478 4701 Delete type=0 #8406
+2018/01/14-15:52:51.633 4701 Level-0 table #8412: started
+2018/01/14-15:52:51.774 4701 Level-0 table #8412: 3269671 bytes OK
+2018/01/14-15:52:51.808 4701 Delete type=0 #8409
+2018/01/14-15:54:54.598 4701 Level-0 table #8414: started
+2018/01/14-15:54:54.786 4701 Level-0 table #8414: 3269246 bytes OK
+2018/01/14-15:54:54.911 4701 Delete type=0 #8411
+2018/01/14-15:54:54.912 4701 Compacting 4@0 + 2@1 files
+2018/01/14-15:54:55.077 4701 Generated table #8415@0: 1 keys, 3269246 bytes
+2018/01/14-15:54:55.111 4701 Generated table #8416@0: 7 keys, 1392 bytes
+2018/01/14-15:54:55.111 4701 Compacted 4@0 + 2@1 files => 3270638 bytes
+2018/01/14-15:54:55.152 4701 compacted to: files[ 0 4 7 0 0 0 0 ]
+2018/01/14-15:54:55.153 4701 Delete type=2 #8414
+2018/01/14-15:54:55.155 4701 Delete type=2 #8405
+2018/01/14-15:54:55.155 4701 Delete type=2 #8404
+2018/01/14-15:54:55.155 4701 Delete type=2 #8407
+2018/01/14-15:54:55.156 4701 Delete type=2 #8410
+2018/01/14-15:54:55.157 4701 Delete type=2 #8412
