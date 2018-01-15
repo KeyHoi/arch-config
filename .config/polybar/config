@@ -184,7 +184,7 @@ card = intel_backlight
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 3
 format-prefix = " "
 label-foreground = #00EE44
 label =  %percentage%%
@@ -200,7 +200,7 @@ label = %percentage_used%%
 [module/wlan]
 type = internal/network
 interface = wlp3s0
-interval = 1.0
+interval = 1
 
 format-connected = <label-connected>
 format-connected-foreground = #7cfc00
@@ -220,7 +220,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 [module/eth]
 type = internal/network
 interface = enp0s25
-interval = 1.0
+interval = 1
 
 format-connected-prefix-foreground = #7cfc00
 label-connected-foreground = #7cfc00
@@ -307,6 +307,7 @@ type = internal/battery
 battery = BAT0
 adapter = AC0
 full-at = 98
+interval = 1
 
 format-charging-prefix = 
 format-charging = <animation-charging> <label-charging>
@@ -356,7 +357,7 @@ ramp-foreground = ${colors.foreground-alt}
 
 [module/pkg]
 type = custom/script
-interval = 1200
+interval = 900
 format = <label>
 label = "%output:0:30%"
 label-foreground = #FFFFFF

@@ -86,8 +86,8 @@ bindsym $mod+Shift+P focus parent
 
 set $workspace1 "1: "
 set $workspace2 "2: "
-set $workspace3 "3: "
-set $workspace4 "4: "
+set $workspace3 "3: "
+set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
 set $workspace7 "7: "
@@ -124,42 +124,37 @@ bindsym $mod+0 workspace $workspace10
 
 # assign workspaces
 assign [class="sublime_text"] $workspace1 
-assign [class="Code"] $workspace1 
-assign [class="code"] $workspace1 
-assign [class="Geany"] $workspace1 
-assign [class="Atom"] $workspace1 
+assign [class="Texmaker"] $workspace1 
 assign [class="jetbrains-pycharm"] $workspace1 
 assign [class="jetbrains-idea"] $workspace1 
-assign [class="libreoffice"] $workspace2 
-assign [class="Evince"] $workspace2 
-assign [class="feh"] $workspace2 
-assign [class="Vlc"] $workspace2 
-assign [class="Google-chrome"] $workspace2 
-
-for_window [class="Spotify"] move to workspace $workspace3
+assign [class="libreoffice"] $workspace3 
+assign [class="Evince"] $workspace3 
+assign [class="feh"] $workspace3 
+assign [class="Vlc"] $workspace3 
+assign [class="Google-chrome"] $workspace2
 
 for_window [class="Google-chrome"] move position center
+for_window [class="sublime_text"] move position center
 for_window [class="Arandr"] floating enable; move position center
 for_window [class="Pavucontrol"] floating enable; move position center  
 for_window [class="Lxappearance"] floating enable; move position center  
 for_window [class="mtp-ng-qt"] floating enable; move position center 
 for_window [class="Galculator"] floating enable  move position center
-for_window [class="Summoners War Exporter"] floating enable; move position center
+
+for_window [class="Spotify"] move to workspace $workspace4
 
 for_window [instance="terminal"] move workspace $workspace7
 for_window [instance="filemanager"] move workspace $workspace8
 for_window [instance="calendar"] move workspace $workspace9
-for_window [instance="music"] move workspace $workspace2
 
-for_window [class="Main.py"] floating enable
 for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 800 400
 for_window [instance="dropdown"] move position center
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 1
 
-# floating_minimum_size 1000 x 600
-# floating_maximum_size 1000 x 600
+floating_minimum_size 1000 x 600
+floating_maximum_size 1000 x 600
 
 bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position center
 
@@ -173,13 +168,11 @@ bindsym $mod+b exec google-chrome-stable https://www.bs.to/andere-serien
 bindsym $mod+a exec arandr
 bindsym $mod+p exec pavucontrol
 
-bindsym $mod+Shift+T exec code
+bindsym $mod+Shift+T exec subl
 
 bindsym $mod+Shift+W exec google-chrome-stable https://web.whatsapp.com
-bindsym $mod+Shift+M exec urxvt -name music -e cmus
-bindsym $mod+s exec spotify -name music
-#bindsym $mod+m exec urxvt -name mail -e mutt -F .config/mutt/muttrc
 bindsym $mod+m exec google-chrome-stable https://www.gmail.com
+bindsym $mod+s exec spotify -name music
 
 bindsym $mod+Shift+A exec android-file-transfer
 bindsym $mod+Shift+c exec galculator
@@ -207,18 +200,16 @@ new_float pixel 1
 focus_follows_mouse no
 
 # gaps
-# gaps inner 50
-
 workspace $workspace1 gaps inner 0
 workspace $workspace2 gaps inner 0
-workspace $workspace3 gaps inner 40
-workspace $workspace4 gaps inner 0
+workspace $workspace3 gaps inner 0
+workspace $workspace4 gaps inner 40
 workspace $workspace5 gaps inner 0
 workspace $workspace6 gaps inner 0
-workspace $workspace7 gaps inner 60
-workspace $workspace8 gaps inner 60
-workspace $workspace9 gaps inner 60
-workspace $workspace10 gaps inner 60
+workspace $workspace7 gaps inner 40
+workspace $workspace8 gaps inner 40
+workspace $workspace9 gaps inner 40
+workspace $workspace10 gaps inner 40
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -238,9 +229,11 @@ exec --no-startup-id urxvt -name filemanager -e ranger
 exec --no-startup-id urxvt -name calendar -e calcurse
 # exec --no-startup-id spotify
 exec --no-startup-id termite --name dropdown
-exec --no-startup-id code
+exec --no-startup-id subl
 
-exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
+# exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
+exec --no-startup-id i3lock-fancy -p
+exec --no-startup-id twmnd
 
 exec --no-startup-id pulseaudio --start
 exec --no-startup-id xbacklight -set 100

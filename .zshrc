@@ -7,7 +7,8 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bullet-train"
+# ZSH_THEME="bullet-train"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -102,8 +103,11 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/keyhoi/.zshrc'
 
-autoload -Uz compinit
+autoload -Uz compinit promptinit
+promptinit
 compinit
+
+# prompt walters
 # End of lines added by compinstall
 
 alias eduroam='sudo wpa_supplicant -i wlp3s0 -c .cat_installer/cat_installer.conf'
@@ -112,3 +116,5 @@ alias at_home='sudo dhcpcd enp0s25 & sudo netctl start wlp3s0-home'
 alias update='pacaur -Syu --noconfirm'
 alias clear_internet='sudo dhcpcd -k enp0s25 & sudo dhcpcd -k wlp3s0 & sudo netctl stop wlp3s0-home'
 alias ls='ls --color=auto'
+
+zstyle ':completion:*' rehash true
