@@ -1,7 +1,7 @@
 [colors]
 ;background = ${xrdb:color0:#222}
-;background = #aa2222100
-background = #000000
+background = #aa2222100
+;background = #000000
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #fff
@@ -53,7 +53,7 @@ tray-padding = 0
 tray-transparent = true
 tray-background = #0063ff
 
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
@@ -121,19 +121,19 @@ strip-wsnumbers = true
 pin-workspaces = true
 
 label-mode-foreground = #EE0000
-label-mode-background = 
+label-mode-background = ${colors.background}
 label-mode-padding = 2
 
 ; focused = Active workspace on focused monitor
 label-focused = %name% %icon%
 label-focused-foreground = #00EE00
-label-focused-background = #000000
+label-focused-background = ${colors.background}
 label-focused-padding = 2 
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name% %icon%
 label-unfocused-foreground = #FFFFFF
-label-unfocused-background = #000000
+label-unfocused-background = ${colors.background}
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
@@ -203,22 +203,21 @@ type = internal/network
 interface = wlp3s0
 interval = 1
 
-format-connected = <label-connected>
+format-connected = <label-connected> 
 format-connected-foreground = #7cfc00
 label-connected-padding-left = 3
-label-connected =  
-
+label-connected =  %signal%%
 
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = #EE0000
 label-disconnected = 
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+format-packetloss = <animation-packetloss> 
+animation-packetloss-0 = 
+animation-packetloss-0-foreground = #EE0000
+animation-packetloss-1 = 
+animation-packetloss-1-foreground = #EE0000
+animation-packetloss-framerate = 750
 
 [module/eth]
 type = internal/network
@@ -227,7 +226,7 @@ interval = 1
 
 format-connected-prefix-foreground = #7cfc00
 label-connected-foreground = #7cfc00
-label-connected =  
+label-connected =  %linkspeed%
 
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = #EE0000

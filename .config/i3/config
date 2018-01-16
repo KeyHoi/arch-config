@@ -91,9 +91,9 @@ set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
 set $workspace7 "7: "
-set $workspace8 "8: "
-set $workspace9 "9: "
-set $workspace10 "10: "
+set $workspace8 "8: "
+set $workspace9 "9: "
+set $workspace10 "10: "
 
 #toggle transparency of focused window
 bindsym $mod+q exec . ~/.scripts/flash_win.sh
@@ -127,13 +127,16 @@ assign [class="sublime_text"] $workspace1
 assign [class="Texmaker"] $workspace1 
 assign [class="jetbrains-pycharm"] $workspace1 
 assign [class="jetbrains-idea"] $workspace1 
+assign [class="Google-chrome"] $workspace2
+assign [class="Filezilla"] $workspace2
 assign [class="libreoffice"] $workspace3 
 assign [class="Evince"] $workspace3 
 assign [class="feh"] $workspace3 
 assign [class="Vlc"] $workspace3 
-assign [class="Google-chrome"] $workspace2
+assign [class="Sylpheed"] $workspace9
 
 for_window [class="Google-chrome"] move position center
+for_window [class="Sylpheed"] move position center
 for_window [class="sublime_text"] move position center
 for_window [class="Arandr"] floating enable; move position center
 for_window [class="Pavucontrol"] floating enable; move position center  
@@ -143,15 +146,15 @@ for_window [class="Galculator"] floating enable  move position center
 
 for_window [class="Spotify"] move to workspace $workspace4
 
-for_window [instance="terminal"] move workspace $workspace7
-for_window [instance="filemanager"] move workspace $workspace8
-for_window [instance="calendar"] move workspace $workspace9
+for_window [instance="terminal1"] move workspace $workspace7
+for_window [instance="terminal2"] move workspace $workspace8
+for_window [instance="calendar"] move workspace $workspace10
 
 for_window [instance="dropdown"] floating enable
 for_window [instance="dropdown"] resize set 800 400
 for_window [instance="dropdown"] move position center
 for_window [instance="dropdown"] move scratchpad
-for_window [instance="dropdown"] border pixel 1
+for_window [instance="dropdown"] border pixel 3
 
 floating_minimum_size 1000 x 600
 floating_maximum_size 1000 x 600
@@ -208,7 +211,7 @@ workspace $workspace5 gaps inner 0
 workspace $workspace6 gaps inner 0
 workspace $workspace7 gaps inner 40
 workspace $workspace8 gaps inner 40
-workspace $workspace9 gaps inner 40
+workspace $workspace9 gaps inner 0
 workspace $workspace10 gaps inner 40
 
 # Pulse Audio controls
@@ -224,17 +227,16 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # decrease screen brightness
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 #startup
-exec --no-startup-id urxvt -name terminal
-exec --no-startup-id urxvt -name filemanager -e ranger
+exec --no-startup-id urxvt -name terminal1
+exec --no-startup-id urxvt -name terminal2
 exec --no-startup-id urxvt -name calendar -e calcurse
-# exec --no-startup-id spotify
-exec --no-startup-id termite --name dropdown
+exec --no-startup-id urxvt -name dropdown -e ranger
 exec --no-startup-id subl
 
-# exec --no-startup-id ~/.config/i3/i3lock-multimonitor/lock
 exec --no-startup-id i3lock-fancy -p
-exec --no-startup-id twmnd
 
+exec --no-startup-id vsftpd
+exec --no-startup-id twmnd
 exec --no-startup-id pulseaudio --start
 exec --no-startup-id xbacklight -set 100
 
