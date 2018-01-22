@@ -32,14 +32,14 @@ font pango:	DejaVu Sans Mono for Powerline 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym button5 kill
 
 # start rofi
-bindsym F3 exec rofi -show run -fg "#00EE00" -bg "#000000" -hlfg "#000000" -hlbg "#00EE00" -lines 5 -separator-style "none" -font "DefaVu Sans Mono 15"
+bindsym F3 exec --no-startup-id rofi -show run -fg "#00EE00" -bg "#000000" -hlfg "#000000" -hlbg "#00EE00" -lines 5 -separator-style "none" -font "DefaVu Sans Mono 15"
 
 # change focus
 bindsym $mod+Left focus left
@@ -88,7 +88,7 @@ set $workspace1 "1: "
 set $workspace2 "2: "
 set $workspace3 "3: "
 set $workspace4 "4: "
-set $workspace5 "5: "
+set $workspace5 "5: "
 set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
@@ -96,7 +96,7 @@ set $workspace9 "9: "
 set $workspace10 "10: "
 
 #toggle transparency of focused window
-bindsym $mod+q exec . ~/.scripts/flash_win.sh
+bindsym $mod+q exec --no-startup-id . ~/.scripts/flash_win.sh
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -161,31 +161,30 @@ floating_maximum_size 1000 x 600
 
 bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position center
 
-bindsym $mod+c exec google-chrome-stable
-bindsym $mod+t exec google-chrome-stable https://www.wunderlist.com/webapp#/lists/inbox
-bindsym $mod+n exec google-chrome-stable https://www.netflix.com
-bindsym $mod+f exec google-chrome-stable https://www.facebook.com
-bindsym $mod+y exec google-chrome-stable https://www.youtube.com
-bindsym $mod+b exec google-chrome-stable https://www.bs.to/andere-serien
+bindsym $mod+c exec --no-startup-id google-chrome-stable
+bindsym $mod+t exec --no-startup-id google-chrome-stable https://www.wunderlist.com/webapp#/lists/inbox
+bindsym $mod+n exec --no-startup-id google-chrome-stable https://www.netflix.com
+bindsym $mod+f exec --no-startup-id google-chrome-stable https://www.facebook.com
+bindsym $mod+y exec --no-startup-id google-chrome-stable https://www.youtube.com
+bindsym $mod+b exec --no-startup-id google-chrome-stable https://www.bs.to/andere-serien
+bindsym $mod+Shift+A exec --no-startup-id google-chrome-stable https://www.amazon.de/Prime-Video/b/ref=nav_youraccount_piv?ie=UTF8&node=3279204031
 
-bindsym $mod+a exec arandr
-bindsym $mod+p exec pavucontrol
+bindsym $mod+a exec --no-startup-id arandr
+bindsym $mod+p exec --no-startup-id pavucontrol
 
-bindsym $mod+Shift+T exec subl
+bindsym $mod+Shift+T exec --no-startup-id subl
 
-bindsym $mod+Shift+W exec google-chrome-stable https://web.whatsapp.com
-bindsym $mod+m exec google-chrome-stable https://www.gmail.com
-bindsym $mod+s exec spotify -name music
+bindsym $mod+Shift+W exec --no-startup-id google-chrome-stable https://web.whatsapp.com
+bindsym $mod+m exec --no-startup-id google-chrome-stable https://www.gmail.com
+bindsym $mod+s exec --no-startup-id spotify -name music
 
-bindsym $mod+Shift+A exec android-file-transfer
-bindsym $mod+Shift+c exec galculator
+bindsym $mod+Shift+c exec --no-startup-id galculator
 
-bindsym $mod+Shift+S exec scrot '%d-%m-%Y_%T.png' -e 'mv $f ~/Images/Screenshots/'
+bindsym $mod+Shift+S exec --no-startup-id scrot '%d-%m-%Y_%T.png' -e 'mv $f ~/Images/Screenshots/'
 
-bindsym $mod+d exec xrandr --output LVDS1 --auto --primary --output HDMI3 --off
-bindsym $mod+Shift+D exec xrandr --output HDMI3 --auto --primary --output LVDS1 --off
-bindsym $mod+Shift+X exec ~/.config/i3/i3lock-multimonitor/lock & systemctl suspend
-bindsym $mod+Shift+Y exec ~/.config/i3/i3lock-multimonitor/lock
+bindsym $mod+d exec --no-startup-id xrandr --output LVDS1 --auto --primary --output HDMI3 --off
+bindsym $mod+Shift+D exec --no-startup-id xrandr --output HDMI3 --auto --primary --output LVDS1 --off
+bindsym $mod+Shift+X exec --no-startup-id i3lock-fancy -p
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
@@ -220,11 +219,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # decrease screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # decrease screen brightness
 
 # Touchpad controls
-#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+#bindsym XF86TouchpadToggle exec --no-startup-id /some/path/toggletouchpad.sh # toggle touchpad
 
 #startup
 exec --no-startup-id urxvt -name terminal1
@@ -235,7 +234,6 @@ exec --no-startup-id subl
 
 exec --no-startup-id i3lock-fancy -p
 
-exec --no-startup-id vsftpd
 exec --no-startup-id twmnd
 exec --no-startup-id pulseaudio --start
 exec --no-startup-id xbacklight -set 100
@@ -246,6 +244,6 @@ exec_always --no-startup-id ~/.scripts/handle_themes.sh
 exec_always --no-startup-id pulseaudio --start
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id xrdb .Xresources 
-exec_always --no-startup-id sudo timedatectl set-timezone Europe/Berlin
+exec_always --no-startup-id timedatectl set-timezone Europe/Berlin
 exec_always --no-startup-id . ~/.config/polybar/launch.sh
 exec_always --no-startup-id xset b off

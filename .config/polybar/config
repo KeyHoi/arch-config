@@ -139,13 +139,13 @@ label-unfocused-padding = 2
 ; visible = Active workspace on unfocused monitor
 label-visible = %name% %icon%
 label-visible-foreground = #FFFFFF
-label-visible-background = #000000
+label-visible-background = ${colors.background}
 label-visible-padding = 2
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %name% %icon%
 label-urgent-foreground = #EE0000
-label-urgent-background = #000000
+label-urgent-background = ${colors.background}
 label-urgent-padding = 2
 
 [module/mpd]
@@ -206,7 +206,7 @@ interval = 1
 format-connected = <label-connected> 
 format-connected-foreground = #7cfc00
 label-connected-padding-left = 3
-label-connected =  %signal%%
+label-connected =  %signal%% 
 
 format-disconnected = <label-disconnected>
 format-disconnected-foreground = #EE0000
@@ -378,7 +378,7 @@ label-open-foreground = #EE0000
 label-open-padding-right = 4
 label-close = 
 label-close-foreground = #EE0000
-label-separator = | 
+label-separator = |
 label-separator-foreground = #EE0000
 label-separator-padding-right = 1
 label-separator-padding-left = 1
