@@ -46,7 +46,7 @@ font-3 = fontawesome:pixelsize=12
 
 modules-left = i3 temperature 
 modules-center = xwindow 
-modules-right = pkg volume wlan eth battery date powermenu
+modules-right = pkg volume wlan eth battery date 
 
 tray-position = right
 tray-padding = 0
@@ -246,6 +246,7 @@ time-alt = %H:%M:%S
 label-foreground = #FFFFFF
 
 label =  %date%  %time%
+label-padding-right = 3
 
 [module/spotify]
 type = custom/script
