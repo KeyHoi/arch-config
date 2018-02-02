@@ -89,7 +89,7 @@ set $workspace2 "2: "
 set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
-set $workspace6 "6: "
+set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
 set $workspace9 "9: "
@@ -167,7 +167,7 @@ bindsym $mod+n exec --no-startup-id google-chrome-stable https://www.netflix.com
 bindsym $mod+f exec --no-startup-id google-chrome-stable https://www.facebook.com
 bindsym $mod+y exec --no-startup-id google-chrome-stable https://www.youtube.com
 bindsym $mod+b exec --no-startup-id google-chrome-stable https://www.bs.to/andere-serien
-bindsym $mod+Shift+A exec --no-startup-id google-chrome-stable https://www.amazon.de/Prime-Video/b/ref=nav_youraccount_piv?ie=UTF8&node=3279204031
+bindsym $mod+Shift+A exec --no-startup-id google-chrome-stable https://www.amazon.de/Amazon-Video/b/?&node=3010075031&ref=tvodatl17&ref=dvm_de_xs_gw_hud_t_en_all_010&pf_rd_p=3dc1fe03-371c-46a9-9c08-2b091768c0a8&pf_rd_r=ZTA92BDJD5CSKHF9PF4R
 
 bindsym $mod+a exec --no-startup-id arandr
 bindsym $mod+p exec --no-startup-id pavucontrol
@@ -200,14 +200,15 @@ new_window pixel 1
 new_float pixel 1
 
 focus_follows_mouse no
+focus_on_window_activation none
 
 # gaps
 workspace $workspace1 gaps inner 0
 workspace $workspace2 gaps inner 0
 workspace $workspace3 gaps inner 0
 workspace $workspace4 gaps inner 40
-workspace $workspace5 gaps inner 0
-workspace $workspace6 gaps inner 0
+workspace $workspace5 gaps inner 40
+workspace $workspace6 gaps inner 40
 workspace $workspace7 gaps inner 40
 workspace $workspace8 gaps inner 40
 workspace $workspace9 gaps inner 0
