@@ -33,6 +33,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+space exec --no-startup-id urxvt -name desktop
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -42,10 +43,10 @@ bindsym button5 kill
 bindsym F3 exec --no-startup-id rofi -show run -fg "#00EE00" -bg "#000000" -hlfg "#000000" -hlbg "#00EE00" -lines 5 -separator-style "none" -font "DefaVu Sans Mono 15"
 
 # change focus
-bindsym $mod+Left focus left
+bindsym $mod+Left workspace prev
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+Right workspace next
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -84,12 +85,12 @@ bindsym $mod+e layout toggle split
 # focus the parent container
 bindsym $mod+Shift+P focus parent
 
-set $workspace1 "1: "
-set $workspace2 "2: "
+set $workspace1 "1: "
+set $workspace2 "2: "
 set $workspace3 "3: "
-set $workspace4 "4: "
-set $workspace5 "5: "
-set $workspace6 "6: "
+set $workspace4 "4: "
+set $workspace5 "5: "
+set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
 set $workspace9 "9: "
@@ -123,16 +124,16 @@ bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
 # assign workspaces
-assign [class="sublime_text"] $workspace1 
-assign [class="Texmaker"] $workspace1 
-assign [class="jetbrains-pycharm"] $workspace1 
-assign [class="jetbrains-idea"] $workspace1 
-assign [class="Google-chrome"] $workspace2
-assign [class="Filezilla"] $workspace2
-assign [class="libreoffice"] $workspace3 
+assign [class="sublime_text"] $workspace2 
+assign [class="Texmaker"] $workspace2 
+assign [class="jetbrains-pycharm"] $workspace2 
+assign [class="jetbrains-idea"] $workspace2 
+assign [class="libreoffice"] $workspace2 
 assign [class="Evince"] $workspace3 
 assign [class="feh"] $workspace3 
 assign [class="Vlc"] $workspace3 
+assign [class="Google-chrome"] $workspace4
+assign [class="Filezilla"] $workspace4
 assign [class="Sylpheed"] $workspace9
 
 for_window [class="Google-chrome"] move position center
@@ -151,15 +152,17 @@ for_window [instance="terminal2"] move workspace $workspace8
 for_window [instance="calendar"] move workspace $workspace10
 
 for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 800 400
-for_window [instance="dropdown"] move position center
+for_window [instance="dropdown"] resize set 900 550
 for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 3
 
-floating_minimum_size 1000 x 600
+for_window [instance="desktop"] floating enable
+for_window [instance="desktop"] resize set 1000 400
+for_window [instance="desktop"] move position 100 100
+
 floating_maximum_size 1000 x 600
 
-bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position center
+bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position 100 100 
 
 bindsym $mod+c exec --no-startup-id google-chrome-stable
 bindsym $mod+t exec --no-startup-id google-chrome-stable https://www.wunderlist.com/webapp#/lists/inbox
@@ -206,7 +209,7 @@ focus_on_window_activation none
 workspace $workspace1 gaps inner 0
 workspace $workspace2 gaps inner 0
 workspace $workspace3 gaps inner 0
-workspace $workspace4 gaps inner 40
+workspace $workspace4 gaps inner 0
 workspace $workspace5 gaps inner 40
 workspace $workspace6 gaps inner 40
 workspace $workspace7 gaps inner 40
@@ -234,6 +237,8 @@ exec --no-startup-id urxvt -name dropdown -e ranger
 exec --no-startup-id subl
 
 exec --no-startup-id i3lock-fancy -p
+exec --no-startup-id conky -d -c .config/conky/htop.conf
+exec --no-startup-id conky -d -c .config/conky/general.conf
 
 exec --no-startup-id twmnd
 exec --no-startup-id pulseaudio --start
