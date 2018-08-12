@@ -1,0 +1,24 @@
+open_with 
+chmod +x %f
+shell sudo chmod +x test.sh
+shell cd ~/Images
+cd Images
+search chris
+search dj
+search DJ
+search SIDO
+search Zara
+search Linkin Park
+mkdir Wallpaper
+cd /srv/http/
+mkdir Altklausuren
+rename vorlesung12.pdf
+
+mkdir Gehaltsabrechnungen
+shell unzip drive-download-20180208T074350Z-001.zip -d Gehaltsabrechnungen
+mkdir Vorlesungen
+mkdir Übungen
+rename altklausur_ss10_loesung.pdf
+mkdir 
+mkdir Uni
+delete

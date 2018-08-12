@@ -1,0 +1,78 @@
+Gefahrstoffverzeichnis
+    Zweck: Verwaltung der Gefahrstoffe, die ein Unternehmen benutzt
+        <=> Liste der Gefahrstoffe + Eigenschaften
+    Modul Gefahrstoffverzeichnis
+        - Fachklasse Gefahrstoff:               > speichert Stoff-, betriebliche und organisatorische Informationen über Gefahrstoff
+        - Fachklasse GefahrstoffBestandteil:    > ist Teil eines Gemischs -> nicht auf Liste
+                                                > ist Gefahrstoff mit wenigen Attributen
+        - Fachklasse GefahrstoffLagerort:       > speichert ortsbezogene Informationen über Gefahrstoff
+        - Fachklasse Gefahrenklasse:            > = (Gefahrklasse, Kategorie) eines Gefahrstoffes
+
+        - Beziehungsklasse GemischGemengeZusammensetzung:   > beschreibt Beziehung zw Gefahrstoff als Gemisch und 
+                                                            Gefahrstoffen/GefahrstoffBestandsteilen                                            
+    Modul Dateien                                                        
+        - Verbindungen zu GefahrstoffLagerort
+            > Fachklasse MusterBetriebsanweisung:       - = MusterBetriebsanweisung für GefahrstoffLagerort
+            > Fachklasse MusterGefaehrdungsbeurteilung: - = MusterGefaehrdungsbeurteilung für GefahrstoffLagerort
+            > Fachklasse Handschuhplan:                 - = Handschuhplan für GefahrstoffLagerort
+            > Fachklasse Bericht
+        - Verbindungen zu Gefahrstoff
+            > Fachklasse Sicherheitsdatenblatt: - Sicherheitsdatenblatt für Gefahrstoff(mehrere möglich)
+    Modul Ettiket
+        - Fachklasse Etiket:    > Ettiket = temporäre Datei
+                                > erstellt bei Erzeugung des Eitikets
+        - Fachklasse Etikettrichtlinie:
+
+Betriebsanweisung
+    Zweck: Erstellen von verschiedenen Betriebsanweisungen aus verschiedenen Betriebsanweisungsdaten
+    Fachklassen
+        - Betriebsanweisungsdaten:              Oberklasse mit gemeinsamen Attributen
+        - BetriebsanweisungsdatenGefahrstoff:   Unterklasse mit Verbindung zu Gefahrstoff
+        - BetriebsanweisungsdatenArbeitsmittel: Unterklasse
+        - BetriebsanweisungsdatenBiostoffV:     Unterklasse
+        - BetriebsanweisungsdatenOrganisation:  Unterklasse
+        - Betriebsanweisung:                    Verweist auf Betriebsanweisungsdokument in File System
+
+Gefährdungsbeurteilung
+    Zweck: Beschreiben von Gefährdungen für Arbeitsbereich/Tätigkeit mit Verbindung zu Massnahme & Aufgaben
+    Fachklassen - Gefährdung
+        Gefährdungsbeurteilung:                         > besteht aus 1-2 GefährdungsbeurteilungBearbeitungszuständen
+        GefährdungsbeurteilungBearbeitungszuständen:    > speichert von Zustand unabhängige Attribute
+                                                        > max 1 freigegebene und 1 Arbeitsversion
+        GefährdungsbeurteilungBetriebszustand:          > Gefährdungsbeurteilung für einen Betriebszustand
+        Gefährdung:                                     > = möglicher Schaden an Mitarbeiter/-innen
+        Gefährdungsfaktor:                              > = Katgorie für Gefährdung
+    Fachklasse Massnahme:   > Massnahme zu einer Gefährdung
+    Fachklasse - Aufgaben
+        Aufgabe:                > vom Auftraggeber gesetzte Teil einer Aufgabe
+        Aufgabenbearbeitung:    > vom Auftragnehmer gesetzte Teil einer Aufgabe
+
+Regelwerk unvollständiges Pflichtenheft
+
+Rechte und Rollen
+    Benutzer, Rechte und Rollen
+        > Strukturbaum?
+        > Rolle zugeordnet zu Liste von PositionAuswahlStartseitenelement(welche Elemente für Rolle freigeschalten)
+    Fachklasse IPWObjekt:   > = Oberklasse aller Fachklassen
+                            > zur Zuordnung von Lesezeichen oder Verwaltung der Bearbeitungshistorie
+    Lesezeichen und Verweise
+        > PDF ab Folie 14
+
+Medienverzeichnis
+    Zweck: Erstellen und Verwaltung von Medien
+    Fachklasse Datei:   > = Dateien, die hochgeladen oder vom System erzeugt wurden
+                        > = Oberklasse aller Datei-Klassen
+                        > Kategorien einer Datei auf Folie 9
+    Fachklasse ArchivierteDatei:    > werden als PDF gedruckt und auf File Server gespeichert
+                                    > Kategorien einer archivierten Datei auf Folie 12
+
+Unfallmanagement
+    Zweck: Verwaltet Unfalldokumentationen/-untersuchungen + zugehörige Dateien
+    Fachklassen - Unfallmangement:
+        Unfalldokumentation:    > = Verbandbucheintrag oder Unfallmeldung
+        Verbandbucheintrag:     > speichert Information für Eintrag in Verbandbuch
+        Unfallmeldung:          > kategorisiert in Beinahe-, meldepflichtige und nicht meldepflichtige Unfallmeldungen
+                                > nur meldepflichtige Unfallmeldungen druckbar
+        Unfalldatei:            > ins System geladene Datei einer Unfallmeldungen
+        Unfallnotiz:            > ins System geladene Notiz einer Unfallmeldungen
+
