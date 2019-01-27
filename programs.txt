@@ -20,6 +20,7 @@ texlive-most
 galculator
 qutebrowser
 htop
+youtube-dl
 
 AUR
 sublime-text-2

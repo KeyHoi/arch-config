@@ -71,6 +71,7 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 floating_maximum_size 1000 x 600
+floating_minimum_size 1000 x 600
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -129,6 +130,7 @@ bindsym $mod+Shift+c	exec --no-startup-id galculator
 bindsym $mod+Shift+m 	exec --no-startup-id thunderbird
 bindsym $mod+Shift+x 	exec --no-startup-id i3lock -i ~/.images/i3lock.png
 bindsym $mod+Shift+s 	exec --no-startup-id sh .scripts/settings.sh
+bindsym $mod+Shift+y 	exec urxvt -name youtube-dl -e sh ~/.scripts/youtube-dl.sh
 
 bindsym $mod+Shift+Return [instance="dropdown"] scratchpad show; move position center
 
@@ -180,7 +182,7 @@ client.urgent           #EE0000 	#000000    	#EE0000      	#00FF00
 
 # execute on startup
 exec ~/.scripts/setcolors.sh
-#exec i3lock -i ~/.images/i3lock.png
+exec i3lock -i ~/.images/i3lock.png
 exec --no-startup-id urxvt -name dropdown -e ranger 
 
 exec --no-startup-id urxvt -name w_term
@@ -189,17 +191,16 @@ exec --no-startup-id subl
 exec --no-startup-id thunderbird
 
 # options for windows
-for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 900 550
-for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] floating enable; resize set 900 550; move scratchpad 
+for_window [instance="youtube-dl"] floating enable; resize set 1100 700; move position center
 for_window [class="Google-chrome"] move position center
 for_window [class="sublime_text"] move position center
+for_window [class="Thunderbird"] move position center
 for_window [class="Arandr"] floating enable; move position center
 for_window [class="Pavucontrol"] floating enable; move position center  
 for_window [class="Lxappearance"] floating enable; move position center   
 for_window [class="Nm-connection-editor"] floating enable; move position center   
 for_window [class="Galculator"] floating enable  move position center
-for_window [class="Thunderbird"] move position center
 
 # assign windows to workspaces
 for_window [instance="w_term"] move workspace $ws1
