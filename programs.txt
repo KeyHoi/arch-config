@@ -1,0 +1,27 @@
+sysstat 
+acpi
+texmaker
+thunderbird
+pulseaudio, pavucontrol
+arandr, xrandr
+lxappearance
+network-manager
+nm-connection-editor
+dialog 
+wpa_supplicant
+rxvt-unicode
+ranger
+i3blocks
+i3lock
+feh
+vlc
+evince
+texlive-most
+galculator
+qutebrowser
+htop
+
+AUR
+sublime-text-2
+google-chrome-stable
+python-pywal

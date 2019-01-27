@@ -204,6 +204,7 @@ for_window [class="Thunderbird"] move position center
 # assign windows to workspaces
 for_window [instance="w_term"] move workspace $ws1
 assign [class="Google-chrome"] $ws2
+assign [class="qutebrowser"] $ws2
 assign [class="sublime_text"] $ws3
 assign [class="Texmaker"] $ws3
 assign [class="Evince"] $ws4
