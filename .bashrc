@@ -9,8 +9,6 @@ alias c='clear; archey3'
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
-# sh .scripts/setcolors.sh
-# clear
 
 export EDITOR=vim
 export PATH="${PATH}:$HOME/.scripts"

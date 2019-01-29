@@ -13,7 +13,7 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-gap_x 100 
+gap_x 100
 gap_y 75
 net_avg_samples 2
 no_buffers yes
@@ -40,11 +40,13 @@ show_graph_range no
 use_xft yes
 xftalpha 1.0
 xftfont Roboto:bold:size=30
-color0 2d1301
+color0 ff850c
+#color0 2d1301
 color1 EAEAEA
 color2 FFA300
 color3 grey
 
 TEXT
-${alignr}${color0}${time %e} ${time %b} ${time %y}
-${alignr}${color0}${time %H}:${time %M}:${time %S}
+${alignc}${color0}${time %e}/${time %m}/${time %y}
+#${alignr}${color0}${time %A}
+${alignc}${color0}${time %H}:${time %M}:${time %S}
