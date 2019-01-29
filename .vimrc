@@ -22,3 +22,5 @@ map <C-a> ggvG$
 map <C-e> :q<Enter>
 
 let g:powerline_pycmd="py3"
+
+set nu
