@@ -47,6 +47,6 @@ color2 FFA300
 color3 grey
 
 TEXT
-${alignc}${color0}${time %e}/${time %m}/${time %y}
+${alignc}${color0}${time %d}/${time %m}/${time %y}
 #${alignr}${color0}${time %A}
 ${alignc}${color0}${time %H}:${time %M}:${time %S}

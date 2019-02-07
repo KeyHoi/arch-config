@@ -6,6 +6,8 @@
 [[ $- != *i* ]] && return
 
 alias c='clear; archey3'
+alias gcal_list='sh ~/.scripts/gcal_list.sh'
+alias gcal_insert='sh ~/.scripts/gcal_insert.sh'
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
